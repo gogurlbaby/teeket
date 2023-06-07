@@ -6,6 +6,7 @@ function App() {
       <h1>This is a Teeket</h1>
       <h2>Ayomide wrote this</h2>
       <h2>Rukky wrote this</h2>
+      <h2>Latifat wrote this </h2>
     </div>
   );
 }
