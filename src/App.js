@@ -1,11 +1,13 @@
 import React from "react";
 import Navbar from "./components/navbar_components/navbar"
+import HomePage from "./pages/home.page";
+
 
 function App() {
   return (
     <div className="App">
      {/* <Navbar /> */}
-     <h1 class="text-3xl font-bold">Teeket</h1>
+     <HomePage />
     </div>
   );
 }

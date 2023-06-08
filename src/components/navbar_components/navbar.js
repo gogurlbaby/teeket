@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import logo from "../../assets/images/general_teeket_logo.svg"
+import logo from "../../assets/other-images/general_teeket_logo.svg"
 
 function Navbar() {
   
@@ -11,7 +11,7 @@ function Navbar() {
   }
 
   return (
-    <nav class="flex justify-between pt-10 px-5">
+    <nav class="h-[78px] w-full flex justify-between pt-10 px-5">
       <img src={logo} alt="teeket-logo" />
       <button type='button' 
        class="bg-[#001133] py-3 px-5 text-[#FFFFFF] rounded-[12px] text-sm- font-bold"
