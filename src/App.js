@@ -1,12 +1,10 @@
-import "./App.css";
+import React from "react";
+import Navbar from "./components/navbar_components/navbar"
 
 function App() {
   return (
-    <div className="text-3xl font-bold underline">
-      <h1>This is a Teeket</h1>
-      <h2>Ayomide wrote this</h2>
-      <h2>Rukky wrote this</h2>
-      <h2>Latifat wrote this </h2>
+    <div className="App">
+     <Navbar />
     </div>
   );
 }
