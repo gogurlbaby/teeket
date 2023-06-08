@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import logo from "../../assets/images/general_teeket_logo.svg"
+import logo from "../../assets/other-images/general_teeket_logo.svg"
 
 function Navbar() {
   
