@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD:src/pages/landing.js
 import landing from "../assets/landing_images/Landing_pageoverlay.png";
 import Tee from "../assets/landing_images/landing_teeket_logo.svg";
 import girl from "../assets/landing_images/landing_image3.png"
@@ -6,6 +7,14 @@ import boy from "../assets/landing_images/landing_image5.png"
 import img from "../assets/landing_images/landing_image1.png"
 import back from"../assets/landing_images/landing_page.png"
 
+=======
+import landing from "../../assets/landing_images/Landing_pageoverlay.png";
+import Tee from "../../assets/landing_images/landing_teeket_logo.svg";
+import girl from "../../assets/landing_images/landing_image3.png"
+import boy from "../../assets/landing_images/landing_image5.png"
+import img from "../../assets/landing_images/landing_image1.png"
+import back from"../../assets/landing_images/landing_page.png"
+>>>>>>> 4076a79 (restructure):src/components/landing-page_components/landing.js
 function Land() {
   return (
     <>
