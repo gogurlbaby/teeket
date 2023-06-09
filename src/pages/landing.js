@@ -1,19 +1,11 @@
 import React from "react";
-<<<<<<< HEAD
 import landing from "../assets/landing_images/Landing_pageoverlay.png";
 import Tee from "../assets/landing_images/landing_teeket_logo.svg";
 import girl from "../assets/landing_images/landing_image3.png"
 import boy from "../assets/landing_images/landing_image5.png"
 import img from "../assets/landing_images/landing_image1.png"
 import back from"../assets/landing_images/landing_page.png"
-=======
-import landing from "../assets/images/landing_images/Landing_pageoverlay.png";
-import Tee from "../assets/images/landing_images/landing_teeket_logo.svg";
-import girl from "../assets/images/landing_images/landing_image3.png"
-import boy from "../assets/images/landing_images/landing_image5.png"
-import img from "../assets/images/landing_images/landing_image1.png"
-import back from"../assets/images/landing_images/landing_page.png"
->>>>>>> e67990b (landing page for teeket app)
+
 function Land() {
   return (
     <>
