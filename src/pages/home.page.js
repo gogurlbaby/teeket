@@ -11,17 +11,11 @@ function HomePage() {
     <div>
       <Navbar />
       <Hero />
-      <div>
-        <EventCreators />
-      </div>
-      <div>
-        <TicketFeatures />
-      </div>
-      <div>
-        <TicketApp />
-      </div>
-      <div>{/* <Testimonials /> */}</div>
-      <div>{/* Section With Button */}</div>
+      <EventCreators />
+      <TicketFeatures />
+      <TicketApp />
+      {/* <Testimonials /> */}
+      {/* Section With Button */}
     </div>
   );
 }
