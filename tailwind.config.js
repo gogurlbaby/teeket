@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js, jsx}"
-  ],
+  content: ["./src/**/*.{js, jsx}"],
   theme: {
     fontFamily: {
-      sans: ['sans-serif'],
-      serif: ['Manrope', 'serif'],
+      sans: ["sans-serif"],
+      serif: ["Manrope", "serif"],
     },
     extend: {},
   },
-  plugins: [],
-}
-
+  plugins: [require("@tailwindcss/forms")],
+};
