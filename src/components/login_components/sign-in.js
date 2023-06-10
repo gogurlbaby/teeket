@@ -38,12 +38,12 @@ function SignIn() {
         </div> */}
         <input
           type="text"
-          className="w-[350px] form-input py-3 px-6 rounded-lg my-4 bg-[#EDEDED] border border-grey-300"
+          className="w-[350px] form-input py-3 px-6 rounded-lg my-4 bg-[#EDEDED] border border-gray-300"
           placeholder="Enter your email address"
         ></input>
         <input
           type="text"
-          className=" w-[350px] form-input py-3 px-6 rounded-lg bg-[#EDEDED] border border-grey-300"
+          className=" w-[350px] form-input py-3 px-6 rounded-lg bg-[#EDEDED] border border-gray-300"
           placeholder="Enter your password"
         ></input>
         <button
