@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./components/navbar_components/navbar"
-import HomePage from "./pages/home.page";
-import Login from "./pages/login";
+import Navbar from "./components/navbar_components/Navbar"
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Land from "./pages/landing.page";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
 
@@ -13,9 +13,9 @@ function App() {
       <div className="App">{/* <Navbar /> */}</div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Land />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="login" element={<Login />} />
+          <Route path="login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </>

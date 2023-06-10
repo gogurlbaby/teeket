@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import google from "../../assets/other-images/google_signin.svg";
 
-function SignIn() {
+function Login() {
   const [toggle, setToggle] = useState(false);
   const toggleGoogle = () => {
     setToggle(!toggle);
@@ -68,4 +68,4 @@ function SignIn() {
     </>
   );
 }
-export default SignIn;
+export default Login;

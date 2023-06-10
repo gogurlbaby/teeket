@@ -6,7 +6,7 @@ import boy from "../../assets/landing_images/landing_image5.png"
 import img from "../../assets/landing_images/landing_image1.png"
 import back from"../../assets/landing_images/landing_page.png"
 
-function Land() {
+function Landing() {
   return (
     <>
       <div
@@ -54,4 +54,4 @@ function Land() {
   );
 }
 
-export default Land;
+export default Landing;
