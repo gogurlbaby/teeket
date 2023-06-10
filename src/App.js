@@ -5,6 +5,8 @@ import Login from "./pages/login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+
+ 
   return (
     <>
       <div className="App">{/* <Navbar /> */}</div>
@@ -15,7 +17,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </>
-  );
+);
 }
 
 export default App;
