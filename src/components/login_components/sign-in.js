@@ -9,7 +9,7 @@ function SignIn() {
   };
   return (
     <>
-      <div className="h-screen flex items-center justify-center flex-col -mt-3 mb-0">
+      <div className="flex items-center justify-center flex-col overflow-auto mt-6">
         <div>
           <h3 className="text-2xl font-semibold">
             Log in or sign up to continue
@@ -38,20 +38,32 @@ function SignIn() {
         </div> */}
         <input
           type="text"
-          className="form-input px-10 py-3 px-16 rounded-lg my-8 bg-[#EDEDED] border border-grey-300"
+          className="w-[350px] form-input py-3 px-6 rounded-lg my-4 bg-[#EDEDED] border border-gray-300"
           placeholder="Enter your email address"
+        ></input>
+        <input
+          type="text"
+          className=" w-[350px] form-input py-3 px-6 rounded-lg bg-[#EDEDED] border border-gray-300"
+          placeholder="Enter your password"
         ></input>
         <button
           type="button"
-          className="bg-[#0052f6] py-2 pb-3 px-16 text-[#FFFFFF] rounded-[12px] text-sm- font-bold  font-light flex flex-row rounded-lg border border-grey-500"
+          className="w-[350px] bg-[#0052f6] py-2 pb-3 px-4 my-4 text-[#FFFFFF] items-center justify-center text-center rounded-[12px] text-sm- font-bold  font-light flex flex-row rounded-lg border border-grey-500"
           onClick={toggleGoogle}
         >
           Continue with Email
         </button>
-        <h3 className="text-[#8F8F8F] my-8 text-center	">
+        <h4 className="text-[#8F8F8F] my-6 text-center	">
           By continuing, you acknowledge that you have read <br /> and
-          understood, and agree to Teeket’s Terms of Service and Privacy Policy.
-        </h3>
+          understood, and agree to Teeket’s{" "}
+          <span className="underline decoration-solid font-bold">
+            Terms of Service
+          </span>{" "}
+          and{" "}
+          <span className="underline decoration-solid font-bold">
+            Privacy Policy.
+          </span>
+        </h4>
       </div>
     </>
   );
