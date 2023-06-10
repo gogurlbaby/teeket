@@ -1,3 +1,196 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .discover-main {
+    border: 1px solid red;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
+  .div-1,
+  .div-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .div-2 {
+    margin-top: 0.9rem;
+  }
+  .div-date,
+  .div-icon,
+  .div-location {
+    display: flex;
+  }
+
+  .div-date {
+    margin-top: 0.7rem;
+  }
+  .div-icon,
+  .div-location {
+    margin-top: 0.4rem;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    border: 0.1px solid;
+    margin-top: 1rem;
+    border-color: #4d4d4d14;
+    width: 347px;
+    height: 172px;
+    box-shadow: 0.5px 0.5px 3px 1px rgba(0, 0, 0, 0.044);
+    border-radius: 10px;
+    padding-left: 0.7rem;
+    padding-right: 0.4rem;
+    padding-top: 0.5rem;
+  }
+  .imag0,
+  .imag1,
+  .imag2 {
+    border-radius: 0.5rem;
+  }
+  .imag0 {
+    margin-top: 0.5rem;
+  }
+  .imag1 {
+    margin-top: 0.5rem;
+  }
+  .imag2 {
+    margin-top: 0.5rem;
+  }
+
+  .img-div4 {
+    width: 41%;
+    margin-top: 0.5rem;
+  }
+  .img-div0 {
+    width: 60%;
+    padding-left: 2.2rem;
+  }
+  .img-div1 {
+    width: 41%;
+  }
+  .img-div2 {
+    width: 55%;
+  }
+  .img-div3 {
+    width: 41%;
+    margin-top: 0.5rem;
+  }
+
+  .span2 {
+    margin-left: 1rem;
+    color: #56aa7c;
+    background-color: #98989845;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .span1 {
+    color: #989898;
+    font-size: small;
+  }
+  .span0 {
+    color: #ff0303;
+    background-color: #ff09092e;
+    padding: 0.1rem 0.4rem;
+    margin-left: 1rem;
+    border-radius: 0.2rem;
+    font-size: 14px;
+  }
+  h3 {
+    color: black;
+    font-weight: bold;
+    width: 120%;
+    font-size: 16px;
+  }
+  .third-h3 {
+    width: 100%;
+    font-size: 16px;
+  }
+  .icon0 {
+    width: 20%;
+  }
+  .icon1 {
+    width: 24%;
+  }
+  .icon2 {
+    width: 14%;
+  }
+
+  .span-name {
+    margin-left: 0.5rem;
+    font-size: 14px;
+    color: #4d4d4d;
+    text-align: center;
+    margin-top: 0.4rem;
+  }
+  .span-location {
+    margin-left: 0.5rem;
+    font-size: 14px;
+  }
+  .div-location {
+    display: flex;
+  }
+  .map0 {
+    width: 15%;
+  }
+  .map1 {
+    width: 19%;
+  }
+  .map2 {
+    width: 10%;
+  }
+  .map4 {
+    width: 10%;
+  }
+  .icon4 {
+    width: 18%;
+  }
+  .icon3 {
+    width: 2rem;
+  }
+  .btn {
+    width: 343px;
+    background-color: #e1e4eb;
+    text-align: center;
+    height: 60px;
+    border-radius: 0.6rem;
+    font-weight: 600;
+  }
+  .btn-div {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .sport-heading {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .hidden-div {
+    margin-top: 1.5rem;
+    display: none;
+  }
+  .header1 {
+    font-size: 24px;
+    font-weight: medium;
+  }
+  .search-bar {
+    width: 279px;
+    background-color: #f5f5f5;
+    height: 48px;
+    border-radius: 12px;
+  }
+  .search-bar::placeholder {
+    padding-left: 1.5rem;
+  }
+  .filter-icon {
+    width: 100%;
+    padding-left: 19rem;
+    margin: 0.7rem 0rem 1rem;
+  }
 }
