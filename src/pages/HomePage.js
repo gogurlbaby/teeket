@@ -4,7 +4,7 @@ import Navbar from "../components/navbar_components/Navbar";
 import EventCreators from "../components/home-page_components/EventCreators";
 import TicketFeatures from "../components/home-page_components/TicketFeatures";
 import TicketApp from "../components/home-page_components/TicketApp";
-// import Testimonials from '../components/home-page_components/Testimonials'
+import Testimonials from '../assets/homepage_images/Testimonials'
 
 function HomePage() {
   return (
@@ -14,8 +14,7 @@ function HomePage() {
       <EventCreators />
       <TicketFeatures />
       <TicketApp />
-      {/* <Testimonials /> */}
-      {/* Section With Button */}
+      <Testimonials />
     </div>
   );
 }
