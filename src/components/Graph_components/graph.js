@@ -10,6 +10,7 @@ import info from "../../assets/graph_images/Info.jpg"
 import jane from "../../assets/graph_images/jane.jpg"
 import john from "../../assets/graph_images/john.jpg"
 import daniel from "../../assets/graph_images/daniel.jpg"
+import Dropdown from "react-bootstrap/Dropdown"
  
 
  function Graph(){
@@ -52,8 +53,17 @@ import daniel from "../../assets/graph_images/daniel.jpg"
                     <h2 className="font-semi-bold text-lg pb-2">Registration</h2>
                     <p className="font-light  text-gray-500">see all registered attendees detail</p>
                 </div>
-                <div className=" relative pt-2">
-                    <img src={btn} alt="button"></img>
+                <div className="bg-transparent">
+                <Dropdown>
+                  <Dropdown.Toggle variant="light" id="dropdown-basic">
+                  Past month
+                 </Dropdown.Toggle>
+                 <Dropdown.Menu>
+                   <Dropdown.Item href="#/today">Today</Dropdown.Item>
+                   <Dropdown.Item href="#/last-days">Last 7 days</Dropdown.Item>
+                   <Dropdown.Item href="#/past-month">Past month</Dropdown.Item>
+                 </Dropdown.Menu>
+                </Dropdown>
                 
                 </div>
                 
