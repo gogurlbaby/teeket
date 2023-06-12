@@ -55,7 +55,7 @@ import Dropdown from "react-bootstrap/Dropdown"
                 </div>
                 <div className="bg-transparent">
                 <Dropdown>
-                  <Dropdown.Toggle variant="light" id="dropdown-basic">
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
                   Past month
                  </Dropdown.Toggle>
                  <Dropdown.Menu>
