@@ -53,7 +53,7 @@ import Dropdown from "react-bootstrap/Dropdown"
                     <h2 className="font-semi-bold text-lg pb-2">Registration</h2>
                     <p className="font-light  text-gray-500">see all registered attendees detail</p>
                 </div>
-                <div>
+                <div /*relative pt-2*/>
                 <Dropdown>
                   <Dropdown.Toggle variant="light" id="dropdown-basic">
                   Past month
