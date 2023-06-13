@@ -11,6 +11,7 @@ import jane from "../../assets/graph_images/jane.jpg"
 import john from "../../assets/graph_images/john.jpg"
 import daniel from "../../assets/graph_images/daniel.jpg"
 import Dropdown from "react-bootstrap/Dropdown"
+import NavBar from "../navbar_components/Navbar";
  
 
  function Graph(){
@@ -37,14 +38,7 @@ import Dropdown from "react-bootstrap/Dropdown"
 
          return(
             <>
-            <nav className="flex justify-between p-3 border outline-1 ">
-                  <div>
-                    <img src={tee} alt="logo"></img>
-                  </div>
-                  <div>
-                    <h3 className="p-2 bg-black text-white rounded-md "> Menu</h3>
-                  </div>
-            </nav>
+            <NavBar />
             <div className="p-2 pt-8   ">
                <img src={go} className="text-xs font-thin  "  alt="frame"></img>
             </div>
