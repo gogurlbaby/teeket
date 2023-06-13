@@ -67,7 +67,7 @@ function Login() {
       delete formDataCopy.password;
       formDataCopy.timestamp = serverTimestamp();
 
-      await setDoc(doc(firebaseSetup, "user", user.uid), formDataCopy);
+      await setDoc(doc(firebaseSetup, "users", user.uid), formDataCopy);
       navigate("/");
       toast.success("Successful Login!");
     } catch (error) {
