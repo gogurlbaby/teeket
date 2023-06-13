@@ -7,3 +7,12 @@
   height: 48px;
   border-radius: 0.5rem;
 }
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
