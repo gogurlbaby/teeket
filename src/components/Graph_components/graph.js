@@ -1,11 +1,6 @@
 import React from "react";
 import tee from "../../assets/other-images/general_teeket_logo.svg"
  import graph1 from"../../assets/graph_images/graph 1.jpg"
- import graph2 from"../../assets/graph_images/graph 2.png"
- import graph3 from"../../assets/graph_images/graph 3.png"
- import go from "../../assets/graph_images/Frame 15.jpg"
- import btn from "../../assets/graph_images/dropdown - btn.png"
- import drop from"../../assets/graph_images/dropdown-list (1).png"
 import info from "../../assets/graph_images/Info.jpg"
 import jane2 from "../../assets/graph_images/jane2.jpg"
 import john2 from "../../assets/graph_images/john2.jpg"
@@ -43,7 +38,7 @@ import vector from "../../assets/graph_images/Vector.svg"
          return(
             <>
             <div  >
-            <nav className="flex  p-3 justify-between border outline-1 ">
+            <nav className="flex  p-3 justify-between outline-1">
                 
                   <div >
                     <img src={tee} alt="logo"></img>
