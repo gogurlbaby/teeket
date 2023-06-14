@@ -68,7 +68,7 @@ function Login() {
       formDataCopy.timestamp = serverTimestamp();
 
       await setDoc(doc(firebaseSetup, "users", user.uid), formDataCopy);
-      navigate("/");
+      navigate("/home");
       toast.success("Successful Login!");
     } catch (error) {
       toast.error("Oops..Try again!");
@@ -91,7 +91,7 @@ function Login() {
           timestamp: serverTimestamp(),
         });
       }
-      navigate("/");
+      navigate("/home");
       toast.success("Successful Login!");
     } catch (error) {
       toast.error("Oops..Try again!");

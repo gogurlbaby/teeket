@@ -8,7 +8,7 @@
     color: #000000;
   }
   
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     /* Display the menu button on mobile */
     .menu-button {
       display: block;
