@@ -36,7 +36,7 @@ function Attendees() {
 
   return (
     <>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden md:flex md:flex-col md:justify-center md:items-center">
         <main className="pl-[1rem]  overflow-hidden">
           <h1 className="mt-[1.5rem] mb-[1rem] font-bold overflow-hidden text-4xl">
             Book your Events with{" "}
@@ -49,14 +49,16 @@ function Attendees() {
             </p>
           </div>
 
-          <h2 className="text-[24px] font-bold mt-[1.5rem]">Trending Event</h2>
+          <h2 className="text-[24px] font-bold mt-[1.5rem] md:flex md:flex-col md:justify-center md:items-center">
+            Trending Event
+          </h2>
 
           {newSerch.map(function (item) {
             return (
               <div
                 className="w-[330px] h-[180px] ml-[1rem] flex justify-between pl-[0.2rem] pt-[1rem] 
                 border-2 mt-[1.5rem]  border-[#4d4d4d10]  pr-[1rem] shadow-sm pb-[1rem] 
-                rounded-[.5rem]"
+                rounded-[.5rem] md:flex md:flex-row md:justify-center md:items-center md:ml-[15rem]"
                 key={item.id}
               >
                 <div className="w-[45%]">
@@ -100,7 +102,7 @@ function Attendees() {
             <button
               type="button"
               onClick={handleButtonClick}
-              className="w-[300px] bg-[#0052f6] text-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500  text-center h-[60px] mt-[1.2rem] text-xl"
+              className="w-[300px] bg-[#0052f6] text-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500  text-center h-[60px] mt-[1rem] text-xl md:flex  md:justify-center md:items-center md:ml-[15rem]"
             >
               Discover more
             </button>
@@ -109,15 +111,15 @@ function Attendees() {
             More than 1000+ leading event companies choose Teeket
           </p>
 
-          <div className="flex mb-[0.5rem]">
-            <img className="w-60" src={sponsor_one} alt="firsttestimonial" />
-            <img className="w-60" src={sponsor_two} alt="firsttestimonial" />
-            <img className=" w-60" src={sponsor_three} alt="firsttestimonial" />
+          <div className="flex mb-[0.5rem] md:flex md:flex-row md:justify-center md:items-center ml-[1.5rem]">
+            <img className="w-20" src={sponsor_one} alt="testimonial" />
+            <img className="w-20" src={sponsor_two} alt="testimonial" />
+            <img className=" w-20" src={sponsor_three} alt="testimonial" />
           </div>
-          <div className="flex mr-[10px]">
-            <img className=" w-60" src={sponsor_four} alt="firsttestimonial" />
-            <img className="w-50" src={sponsor_five} alt="firsttestimonial" />
-            <img className="w-60" src={sponsor_six} alt="firsttestimonial" />
+          <div className="flex mr-[10px] md:flex md:flex-row md:justify-center md:items-center">
+            <img className=" w-20" src={sponsor_four} alt="testimonial" />
+            <img className="w-20" src={sponsor_five} alt="testimonial" />
+            <img className="w-20" src={sponsor_six} alt="testimonial" />
           </div>
 
           {showHiddenObjects
