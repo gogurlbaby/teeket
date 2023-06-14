@@ -9,7 +9,6 @@ import vector2 from "../../assets/discoverpage_images/vectt.png";
 import chatDot from "../../assets/discoverpage_images/ChatDots.png";
 
 function Footer() {
-
   //drop down functionality
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const toggleDrop = () => {
@@ -17,7 +16,7 @@ function Footer() {
   };
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <main
         class=" w-[375px] h-[835px] bg-[#110011]
       mx-8 mt-[4rem] pt-[.9rem] pl-[1rem]"

@@ -1,12 +1,10 @@
 import React from "react";
-import "../App.css";
-import filterImage from "../assets/discoverpage_images/filter.png";
-import music from "../assets/discoverpage_images/music_note.png";
-import { eventArray } from "../Eventdata";
+import "../../App.css";
+import { attendanceArray } from "../../AttendeesData";
 import { useState } from "react";
-import { remainEvents } from "../Eventdata";
+import { remainEvents } from "../../AttendeesData";
 
-function Events() {
+function Attendees() {
   //Button functionality
   // eslint-disable-next-line no-unused-vars
   const [displayedObjects, setDisplayedObjects] = useState([]);
@@ -18,13 +16,13 @@ function Events() {
 
   // Search functionality
   const [searchQuery, setSearchQuery] = useState("");
-  const [newSerch, setSearchResults] = useState(eventArray);
+  const [newSerch, setSearchResults] = useState(attendanceArray);
 
   const handleSearch = (event) => {
     const query = event.target.value.toLowerCase();
     setSearchQuery(query);
 
-    const filteredResults = eventArray.filter((object) =>
+    const filteredResults = attendanceArray.filter((object) =>
       object.title.toLowerCase().includes(query)
     );
     setSearchResults(filteredResults);
@@ -32,51 +30,20 @@ function Events() {
 
   return (
     <>
-      <div>
-        <main className="pl-[2rem] pr-[2rem] ">
-          <h1 className="mt-[3rem] mb-[1rem] text-[24px] font-medium">
-            Discover events near you
+      <div className="overflow-hidden">
+        <main className="pl-[1rem]  overflow-hidden">
+          <h1 className="mt-[1.5rem] mb-[1rem] font-bold overflow-hidden text-4xl">
+            Book your Events with{" "}
+            <span style={{ color: "#0765f8" }}>Teeket</span>
           </h1>
           <div className="flex mb-[1rem]">
-            <form>
-              <input
-                class="bg-[#827f7f30] border-none w-[279px] h-[48px] rounded-[.6rem]
-              "
-                type="text"
-                placeholder="Search all events"
-                className="search-bar"
-                value={searchQuery}
-                onChange={handleSearch}
-              />
-            </form>
-            <div className="w-[35%]   pl-[2rem]">
-              {<img src={filterImage} alt="icon" />}
-            </div>
+            <p>
+              Your one stop platform to create, manage and promote your events
+              at your convenience.
+            </p>
           </div>
 
-          <div className="flex display justify-between ">
-            <div className="w-[164px] h-[84px] bg-[#FBBF0A] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
-              <img src={music} alt="music-icon" />
-              <p>Music</p>
-            </div>
-            <div className="h-[84px] w-[164px]  bg-[#EEEEEE] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
-              <img src={music} alt="music-icon" />
-              <p>Tech</p>
-            </div>
-          </div>
-
-          <div className="flex mt-[1rem] justify-between  ">
-            <div className="w-[164px] h-[84px] bg-[#B0E298] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
-              <img src={music} alt="music-icon" />
-              <p>Arts and Culture </p>
-            </div>
-            <div className="h-[84px] w-[164px]  bg-[#FFC971] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
-              <img src={music} alt="music-icon" />
-              <p>Business</p>
-            </div>
-          </div>
-
-          <h2 className="text-[24px] font-bold mt-[1.5rem]">Upcoming Event</h2>
+          <h2 className="text-[24px] font-bold mt-[1.5rem]">Trending Event</h2>
 
           {newSerch.map(function (item) {
             return (
@@ -188,4 +155,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default Attendees;

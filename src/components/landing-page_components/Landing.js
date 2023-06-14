@@ -44,7 +44,7 @@ function Landing() {
         </div>
         <div className=" flex items-center justify-center ">
           <a
-            href="#"
+            href="/"
             className="text-center text-white font-bold text-sm p-2 pl-24 pr-24 rounded-md bg-blue-800"
           >
             Create an event
@@ -52,7 +52,7 @@ function Landing() {
         </div>
         <div className=" flex items-center justify-center ">
           <a
-            href="#"
+            href="/"
             className="text-center mt-3 font-bold text-sm p-2 pl-24 pr-24 rounded-md bg-white"
           >
             Discover events

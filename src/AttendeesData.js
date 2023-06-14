@@ -1,14 +1,14 @@
-export let eventArray = [
+export let attendanceArray = [
   {
     id: 0,
-    name: "Wallace James",
-    location: "Abuja, Nigeria",
-    date: "03 JUNE",
-    title: `The next confrence 23'`,
-    price: "$10.00",
-    image: "/images/image 15.png",
+    name: "Go Pro Company",
+    location: "Lagos, Nigeria",
+    date: "12 JUNE",
+    title: `Future of Web3 Conference'`,
+    price: "$8.00",
+    image: "/images/event1.png",
     mapline: "/images/MapPinLine.png",
-    icon: "/images/eventcreator_3.png",
+    icon: "/images/userorganiser1.png",
   },
 
   {
@@ -18,9 +18,9 @@ export let eventArray = [
     date: "03 JUNE",
     title: "Devfest",
     price: "FREE",
-    image: "/images/event_image4.png",
+    image: "/images/event2.png",
     mapline: "/images/MapPinLine.png",
-    icon: "/images/eventcreator_2.png",
+    icon: "/userorganiser2.png",
   },
 
   {
@@ -30,9 +30,9 @@ export let eventArray = [
     date: "03 JUNE",
     title: "Sip and Pant NG at RadisonBlu",
     price: "FREE",
-    image: "/images/event_image3.png",
+    image: "/images/event3.png",
     mapline: "/images/MapPinLine.png",
-    icon: "/images/eventcreator_1.png",
+    icon: "/images/userorganiser3.png",
   },
 ];
 

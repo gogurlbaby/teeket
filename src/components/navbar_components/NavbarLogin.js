@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/other-images/general_teeket_logo.svg";
 import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
 
-function NavBar() {
+function NavbarLogin() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -10,7 +10,10 @@ function NavBar() {
 
   return (
     <>
-      <Navbar className="h-[80px] w-full pt-[1.5rem] px-[1rem]" expand="md">
+      <Navbar
+        className="h-[100px] w-full flex justify-between pt-[1.5rem] px-[1rem] shadow-lg "
+        expand="md"
+      >
         <Container fluid>
           <Navbar.Brand href="/">
             <img src={logo} alt="teeket-logo" />
@@ -18,7 +21,7 @@ function NavBar() {
           <button
             type="button"
             onClick={handleShow}
-            className="mt-2 bg-[#001133] py-[1rem] px-[1.5rem] text-[#FFFFFF] rounded-[12px] text-sm- font-bold"
+            className="mt-2 bg-[#001133] py-[0.6rem] px-[1.2rem] text-[#FFFFFF] rounded-[10px] text-sm- font-bold"
           >
             Menu
           </button>
@@ -50,4 +53,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavbarLogin;
