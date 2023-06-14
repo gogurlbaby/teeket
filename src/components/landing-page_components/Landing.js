@@ -12,9 +12,9 @@ function Landing() {
         style={{
           backgroundImage: `linear-gradient(to top, #2563eb,#172554),url(${background_image})`,
         }}
-        className="md:flex md:flex-col md:justify-center md:items-center h-screen w-full bg-blend-multiply py-[10.5rem] mx-auto"
+        className="md:flex md:flex-col md:justify-center md:items-center h-screen w-full bg-blend-multiply  mx-auto"
       >
-        <div className="flex justify-center align-center">
+        <div className="flex justify-center pt-20 align-center">
           <img src={Tee} alt="logo" />
         </div>
         <div className="flex justify-center align-center mt-[3.063rem]">
