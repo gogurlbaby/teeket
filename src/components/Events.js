@@ -53,22 +53,22 @@ function Events() {
         </div>
         
         <div class="flex gap-x-[2rem] pb-[1rem]">
-          <div class="w-[164px] h-[84px] bg-[#FBBF0A] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
+          <div class="md:w-[200px] md:h-[100px] w-[164px] h-[84px] bg-[#FBBF0A] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
             <img src={music} alt="music-icon" />
             <p>Music</p>
           </div>
-          <div class="h-[84px] w-[164px]  bg-[#EEEEEE] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
+          <div class="md:w-[200px] md:h-[100px]h-[84px] w-[164px]  bg-[#EEEEEE] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
             <img src={music} alt="music-icon" />
             <p>Tech</p>
           </div>
         </div>
 
         <div class="flex gap-x-[2rem]">
-          <div class="w-[164px] h-[84px] bg-[#B0E298] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
+          <div class="md:w-[200px] md:h-[100px] w-[164px] h-[84px] bg-[#B0E298] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
             <img src={music} alt="music-icon" />
             <p>Arts and Culture </p>
           </div>
-          <div class="h-[84px] w-[164px]  bg-[#FFC971] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
+          <div class="md:w-[200px] md:h-[100px] h-[84px] w-[164px]  bg-[#FFC971] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
             <img src={music} alt="music-icon" />
             <p>Business</p>
           </div>
@@ -78,8 +78,8 @@ function Events() {
 
         {newSerch.map(function (item) {
           return (
-            <div
-              class="w-[349px] h-[172px] ml-[1rem] flex justify-between pl-[1rem] pt-[1rem] 
+            <div 
+              class="md:w-full w-[349px] h-[172px] ml-[1rem] flex justify-between pl-[1rem] pt-[1rem] 
                 border-2 mt-[1.5rem]  border-[#4d4d4d10]  pr-[1rem] shadow-sm pb-[1rem] 
                 rounded-[.5rem]"
               key={item.id}
@@ -123,7 +123,7 @@ function Events() {
           <button
             type="button"
             onClick={handleButtonClick}
-            class=" w-[343px] bg-[#E1E4EB] text-center rounded-xl h-[60px] mt-[1rem]"
+            class="py-[1rem] px-[5rem] bg-[#E1E4EB] text-center rounded-xl mt-[1rem]"
           >
             Discover more
           </button>
