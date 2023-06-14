@@ -18,7 +18,7 @@ function NavBar() {
           <button
             type="button"
             onClick={handleShow}
-            className="mt-2 bg-[#001133] py-[1rem] px-[1.5rem] text-[#FFFFFF] rounded-[12px] text-sm- font-bold"
+            className="mt-2 bg-[#001133] py-[0.8rem] px-[1.2rem] text-[#FFFFFF] rounded-[12px] text-sm- font-bold"
           >
             Menu
           </button>

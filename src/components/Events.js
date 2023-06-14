@@ -31,15 +31,15 @@ function Events() {
   };
 
   return (
-    <div class="md:flex md:justify-center md:items-center">
-      <main class="pl-[2rem] pr-[2rem] ">
-        <h1 class="mt-[3rem] mb-[1rem] text-[24px] font-medium">
+    <div class="md:flex md:justify-center md:items-center overflow-hidden">
+      <main class="pl-[0.9rem] pr-[1rem] ">
+        <h1 class="mt-[2.5rem] mb-[1rem] text-[28px] font-light">
           Discover events near you
         </h1>
         <div class="flex mb-[1rem]">
           <form>
             <input
-              class="bg-[#827f7f30] border-none w-[279px] h-[48px] rounded-[.6rem]
+              class="bg-[#827f7f30] border-none w-[279px] h-[48px] rounded-[.6rem] 
               "
               type="text"
               placeholder="Search all events"
@@ -48,7 +48,7 @@ function Events() {
               onChange={handleSearch}
             />
           </form>
-          <div class="w-[35%] pl-[2rem]">
+          <div className="w-[35%] pl-[2rem]">
             {<img src={filterImage} alt="icon" />}
           </div>
         </div>
@@ -79,9 +79,9 @@ function Events() {
         {newSerch.map(function (item) {
           return (
             <div
-              className="w-[349px] h-[172px] ml-[1rem] flex justify-between pl-[1rem] pt-[1rem] 
+              className="w-[335px] h-[180px] ml-[1rem] flex justify-between pl-[1rem] pt-[1rem] 
                 border-2 mt-[1.5rem]  border-[#4d4d4d10]  pr-[1rem] shadow-sm pb-[1rem] 
-                rounded-[.5rem]"
+                rounded-[.5rem] "
               key={item.id}
             >
               <div className="w-[45%]">
@@ -103,7 +103,7 @@ function Events() {
 
                 <div className="flex w-[90%] mt-[1rem]">
                   <img src={item.icon} alt="eventcreator" />
-                  <p className="text-[12px] w-[20rem]  ml-[.4rem] ">
+                  <p className="text-[12px] w-[20rem]  ml-[.4rem] mt-[1rem]">
                     {item.name}
                   </p>
                 </div>
@@ -121,11 +121,11 @@ function Events() {
           );
         })}
 
-        <div className=" ml-[1rem]">
+        <div className=" ml-[0.6rem]">
           <button
             type="button"
             onClick={handleButtonClick}
-            className=" w-[343px] bg-[#E1E4EB] text-center h-[60px] mt-[1rem]"
+            className=" w-[343px] bg-[#E1E4EB] text-center h-[60px] mt-[1rem] text-xl rounded-lg"
           >
             Discover more
           </button>

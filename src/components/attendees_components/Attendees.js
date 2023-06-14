@@ -37,7 +37,7 @@ function Attendees() {
             <span style={{ color: "#0765f8" }}>Teeket</span>
           </h1>
           <div className="flex mb-[1rem]">
-            <p>
+            <p className="font-light text-xl">
               Your one stop platform to create, manage and promote your events
               at your convenience.
             </p>
@@ -48,7 +48,7 @@ function Attendees() {
           {newSerch.map(function (item) {
             return (
               <div
-                className="w-[349px] h-[172px] ml-[1rem] flex justify-between pl-[1rem] pt-[1rem] 
+                className="w-[330px] h-[180px] ml-[1rem] flex justify-between pl-[0.2rem] pt-[1rem] 
                 border-2 mt-[1.5rem]  border-[#4d4d4d10]  pr-[1rem] shadow-sm pb-[1rem] 
                 rounded-[.5rem]"
                 key={item.id}
@@ -72,12 +72,12 @@ function Attendees() {
 
                   <div className="flex w-[90%] mt-[1rem]">
                     <img src={item.icon} alt="eventcreator" />
-                    <p className="text-[12px] w-[20rem]  ml-[.4rem] ">
+                    <p className="text-[12px] w-[20rem]  ml-[.4rem] mt-[1rem]">
                       {item.name}
                     </p>
                   </div>
 
-                  <div className="flex mt-[1rem]">
+                  <div className="flex mt-[0.6rem]">
                     <img src={item.mapline} alt="mapline" />
                     <span>{item.location}</span>
                   </div>
@@ -94,7 +94,7 @@ function Attendees() {
             <button
               type="button"
               onClick={handleButtonClick}
-              className=" w-[343px] bg-[#E1E4EB] text-center h-[60px] mt-[1rem]"
+              className="w-[300px] bg-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500  text-center h-[60px] mt-[1rem] text-xl"
             >
               Discover more
             </button>
@@ -107,7 +107,7 @@ function Attendees() {
                     {item.heading}
                   </h2>
                   <div
-                    className="w-[349px] ml-[1rem] h-[172px] flex justify-between pl-[1rem] pt-[1rem] 
+                    className="w-[330px] ml-[1rem] h-[172px] flex justify-between pl-[1rem] pt-[1rem] 
                 border-2 mt-[1.5rem] border-[#4d4d4d10]  pr-[1rem] shadow-sm pb-[1rem] 
                 rounded-[.5rem]"
                     key={item.id}
