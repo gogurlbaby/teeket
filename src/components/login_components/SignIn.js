@@ -11,7 +11,7 @@ import {
 // import { loginValidate } from "../../userValidation";
 
 import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 // import { zodResolver } from "@hookform/resolvers/zod";
@@ -177,6 +177,7 @@ function Login() {
           >
             Continue with Email
           </button>
+          <ToastContainer />
         </form>
         <h4 className="text-[#8F8F8F] my-4 text-center font-bold text-[14px]">
           By continuing, you acknowledge that you have read <br /> and
