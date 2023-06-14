@@ -31,11 +31,11 @@ function Events() {
 
   return (
     <div class="md:flex md:justify-center md:items-center">
-      <main class="pl-[2rem] pr-[2rem] ">
+      <main class="pl-[2rem] pr-[2rem] w-full">
         <h1 class="mt-[3rem] mb-[1rem] text-[24px] font-medium">
           Discover events near you
         </h1>
-        <div class="flex mb-[1rem]">
+        <div class="flex mb-[1rem] text-center ">
           <form>
             <input
               class="bg-[#827f7f30] border-none w-[279px] h-[48px] rounded-[.6rem]
@@ -51,7 +51,7 @@ function Events() {
             {<img src={filterImage} alt="icon" />}
           </div>
         </div>
-        
+
         <div class="flex gap-x-[2rem] pb-[1rem]">
           <div class="w-[164px] h-[84px] bg-[#FBBF0A] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
             <img src={music} alt="music-icon" />

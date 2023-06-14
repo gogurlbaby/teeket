@@ -9,7 +9,6 @@ import vector2 from "../../assets/discoverpage_images/vectt.svg";
 import chatDot from "../../assets/discoverpage_images/ChatDots.svg";
 
 function Footer() {
-
   //drop down functionality
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const toggleDrop = () => {
@@ -26,7 +25,10 @@ function Footer() {
           class="md:w-[700px] md:flex md:flex-col md:justify-center md:items-center pl-[.5rem] w-[343px]
       pt-[1.7rem] text-center mx-auto pb-[1.875rem]
       rounded-[1rem] "
-      style={{background: "linear-gradient(217.73deg, #FF0303 -11.96%, #0052F6 68.7%)"}}
+          style={{
+            background:
+              "linear-gradient(217.73deg, #FF0303 -11.96%, #0052F6 68.7%)",
+          }}
         >
           <div class=" flex">
             <div>
@@ -94,75 +96,76 @@ function Footer() {
         </div>
 
         <div class="mx-[1rem] md:mx-[4rem]">
-        <div>
-          <div class="mt-[1rem]">
-            <span class="text-[#989898] text-[12px] font-medium">MENU</span>
+          <div>
+            <div class="mt-[1rem]">
+              <span class="text-[#989898] text-[12px] font-medium">MENU</span>
+            </div>
+
+            <div class="flex  mt-[1.2rem] mb-[.7rem]">
+              <h3 class="font-semibold text-[14px] text-[#FFFFFF]">
+                For Organizers
+              </h3>
+              <div>
+                <img
+                  src={vector1}
+                  alt="vector"
+                  class="ml-[14rem] mt-[.4rem]"
+                  onClick={toggleDrop}
+                />
+              </div>
+            </div>
+
+            {isDropdownOpen && (
+              <div class=" pt-[.8rem]">
+                <a href=" "></a>
+                <p class="text-[#D2D2D2] mb-[.7rem] text-[14px] font-light">
+                  How to create events
+                </p>
+                <p class="text-[#D2D2D2] text-[14px] mt-[.7rem] mb-[.6rem] font-lightl">
+                  Event FAQs.
+                </p>
+                <p class="text-[#D2D2D2] text-[14px] font-light ">
+                  For Attendees.
+                </p>
+              </div>
+            )}
           </div>
 
-          <div class="flex  mt-[1.2rem] mb-[.7rem]">
-            <h3 class="font-semibold text-[14px] text-[#FFFFFF]">
-              For Organizers
-            </h3>
-            <div>
-              <img
-                src={vector1}
-                alt="vector"
-                class="ml-[14rem] mt-[.4rem]"
-                onClick={toggleDrop}
-              />
+          <div class=" w-full bg-[#585858c0] h-[.2px] mt-[2.5rem] text-center"></div>
+
+          <div class="mt-[2rem]">
+            <div class="flex">
+              <img src={vector2} alt="vector" />
+              <p class="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem]">
+                09136605067
+              </p>
+            </div>
+
+            <div class="flex mt-[1rem]">
+              <img src={chatDot} alt="chatIcon " />
+              <p class="text-[#FFFFFF] text-[12px] font-light ml-[.7rem]">
+                Teeket@support.com
+              </p>
             </div>
           </div>
 
-          {isDropdownOpen && (
-            <div class=" pt-[.8rem">
-              <p class="text-[#D2D2D2] mb-[.7rem] text-[14px] font-light">
-                How to create events
-              </p>
-              <p class="text-[#D2D2D2] text-[14px] mt-[.7rem] mb-[.6rem] font-lightl">
-                Event FAQs.
-              </p>
-              <p class="text-[#D2D2D2] text-[14px] font-light ">
-                For Attendees.
-              </p>
-            </div>
-          )}
-        </div>
+          <div class=" w-full bg-[#585858c1] h-[.2px] mt-[3.5rem] text-center"></div>
 
-        <div class=" w-[343px] bg-[#585858c0] h-[.2px] mt-[2.5rem]"></div>
-
-        <div class="mt-[2rem]">
-          <div class="flex">
-            <img src={vector2} alt="vector" />
-            <p class="text-[#FFFFFF] text-[12px] font-light ml-[.7rem]">
-              09136605067
+          <div class="flex mt-[1.6rem]">
+            <p class="text-[#FFFFFF] text-[14px] font-normal">Privacy Policy</p>
+            <p class="text-[#FFFFFF] text-[14px] font-normal ml-[6rem]">
+              Terms of Use
             </p>
           </div>
 
-          <div class="flex mt-[1rem]">
-            <img src={chatDot} alt="chatIcon" />
-            <p class="text-[#FFFFFF] text-[12px] font-light ml-[.7rem]">
-              Teeket@support.com
+          <div class="mt-[.4rem]">
+            <p class="font-extralight text-[12px] text-[#ffffff83]">
+              @TeeketInc Allrights reserved.
+            </p>
+            <p class="font-extralight text-[11.7px] text-[#ffffff83] text-center mt-[1.4rem]">
+              HerTechTrail Capstone project, designed by GROUP 2
             </p>
           </div>
-        </div>
-
-        <div class=" w-[343px] bg-[#585858c1] h-[.2px] mt-[3.5rem]"></div>
-
-        <div class="flex mt-[1.6rem]">
-          <p class="text-[#FFFFFF] text-[14px] font-normal">Privacy Policy</p>
-          <p class="text-[#FFFFFF] text-[14px] font-normal ml-[6rem]">
-            Terms of Use
-          </p>
-        </div>
-
-        <div class="mt-[.4rem]">
-          <p class="font-extralight text-[12px] text-[#ffffff83]">
-            @TeeketInc Allrights reserved.
-          </p>
-          <p class="font-extralight text-[11.7px] text-[#ffffff83] text-center mt-[1.4rem]">
-            HerTechTrail Capstone project, designed by GROUP 2
-          </p>
-        </div>
         </div>
       </main>
     </div>
