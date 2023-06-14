@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/other-images/general_teeket_logo.svg";
 import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap"
+import "./MenuButton.css"
 
 function NavBar() {
   
@@ -22,7 +23,7 @@ function NavBar() {
             <button 
             type="button"
             onClick={handleShow}
-            className="mt-2 bg-[#001133] py-[1rem] px-[1.5rem] text-[#FFFFFF] rounded-[12px] text-sm- font-bold"
+            className="menu-button mt-2 bg-[#001133] py-[1rem] px-[1.5rem] text-[#FFFFFF] rounded-[12px] text-sm- font-bold"
             >
             Menu
             </button>
@@ -39,12 +40,10 @@ function NavBar() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="/">Landing Page</Nav.Link>
+              <Nav className="list-items justify-content-end flex-grow-1 pe-3">
+                <Nav.Link href="/">Teeket</Nav.Link>
                 <Nav.Link href="/home">Home</Nav.Link>
-                <Nav.Link href="/discover-events">Discover Events</Nav.Link>
-                <Nav.Link href="/book-events">Book Events</Nav.Link>
-                <Nav.Link href="/login">Login</Nav.Link>
+                <Nav.Link href="/discover-events">Discover</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
