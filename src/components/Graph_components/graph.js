@@ -33,7 +33,11 @@ function Graph() {
       <div className="p-2 pt-8   ">
         <div className="flex p-4">
           <img src={vector} alt="frame"></img>
-          <h3 className="pl-4 pt-1 text-base font-semi-bold">Go Back</h3>
+          <a href="/" className="no-underline text-gray-800" >
+            <h3 className="pl-4 pt-1 text-base font-semi-bold no-underline">
+            Go Back
+            </h3>
+          </a>
         </div>
         <div className="flex justify-between p-2">
           <div className="p-2">
@@ -97,7 +101,7 @@ function Graph() {
                   </h3>
                 </div>
 
-                <h3 className="text-center text-md  pt-3">{top.Attendees}</h3>
+                <h3 className="xs:text-lg font-medium pl-2 pt-1 font-semi-bold text-gray-600">{top.Email}</h3>
               </div>
             );
           })}
