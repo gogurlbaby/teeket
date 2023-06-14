@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/other-images/general_teeket_logo.svg";
 import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
+import "./MenuButton.css";
 
 function NavbarLogin() {
   const [show, setShow] = useState(false);
@@ -21,7 +22,7 @@ function NavbarLogin() {
           <button
             type="button"
             onClick={handleShow}
-            className="mt-2 bg-[#001133] py-[0.6rem] px-[1.2rem] text-[#FFFFFF] rounded-[10px] text-sm- font-bold"
+            className="menu-button mt-2 bg-[#001133] py-[0.6rem] px-[1.2rem] text-[#FFFFFF] rounded-[10px] text-sm- font-bold"
           >
             Menu
           </button>
