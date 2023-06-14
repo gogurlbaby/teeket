@@ -1,28 +1,28 @@
 import React from "react";
 import Tee from "../../assets/landing_images/landing_teeket_logo.svg";
-import girl from "../../assets/landing_images/landing_image3.png";
-import boy from "../../assets/landing_images/landing_image5.png";
-import img from "../../assets/landing_images/landing_image1.png";
-import back from "../../assets/landing_images/landing_page.png";
+import girl from "../../assets/landing_images/landing_image3.svg";
+import boy from "../../assets/landing_images/landing_image5.svg";
+import img from "../../assets/landing_images/landing_image1.svg";
+import background_image from "../../assets/landing_images/landing_page.png";
 
 function Landing() {
   return (
     <>
       <div
         style={{
-          backgroundImage: `linear-gradient(to top, #2563eb,#172554),url(${back})`,
+          backgroundImage: `linear-gradient(to top, #2563eb,#172554),url(${background_image})`,
         }}
-        className="h-screen w-full bg-blend-multiply mx-auto"
+        className="md:flex md:flex-col md:justify-center md:items-center h-screen w-full bg-blend-multiply py-[10.5rem] mx-auto"
       >
-        <div className="flex justify-center align-center pt-40 pb-10">
+        <div className="flex justify-center align-center">
           <img src={Tee} alt="logo" />
         </div>
-        <div className="flex justify-center align-center   ">
-          <div className="flex justify-center align-center  flex-wrap space-x-3 w-1/2 h-40 mx-2  ">
+        <div className="flex justify-center align-center mt-[3.063rem]">
+          <div className="flex justify-center align-center  flex-wrap space-x-3 w-1/2 h-40 mx-2">
             <div className=" h-12 w-14 rounded-md bg-contain bg-no-repeat">
               <img src={girl} className="w-full h-full" alt="logo" />
             </div>
-            <div className="bg-blue-600  h-10 w-28 rounded-md text-center p-2 text-white font-bold ">
+            <div className="bg-blue-600  h-10 w-28 rounded-md text-center p-2 text-white font-bold">
               #Trending
             </div>
             <div className=" mr-4 bg-yellow-400 h-10 w-24 pt-2 text-center rounded-md">
@@ -37,23 +37,23 @@ function Landing() {
           </div>
         </div>
         <div className=" flex items-center justify-center mb-4">
-          <h3 className="text-white font-5x text-center w-1/2">
+          <h3 className="md:my-4 text-white font-normal text-center text-[18px]">
             Your one stop platform to create,manage and promote your events at
             your convinence.
           </h3>
         </div>
-        <div className=" flex items-center justify-center ">
+        <div className="flex items-center justify-center">
           <a
-            href="#"
-            className="text-center text-white font-bold text-sm p-2 pl-24 pr-24 rounded-md bg-blue-800"
+            href="/login"
+            className="md:px-[10rem] text-[#FFFFFF] font-medium text-base no-underline py-[1.125rem] px-[6rem] rounded-xl bg-[#0052F6]"
           >
             Create an event
           </a>
         </div>
-        <div className=" flex items-center justify-center ">
+        <div className="md:mt-[3rem] flex items-center justify-center mt-[1.5rem]">
           <a
-            href="#"
-            className="text-center mt-3 font-bold text-sm p-2 pl-24 pr-24 rounded-md bg-white"
+            href="/discover-events"
+            className="md:px-[10rem] text-[#101010] font-medium text-base no-underline py-[1.125rem] px-[6rem] rounded-xl bg-[#FFFFFF]"
           >
             Discover events
           </a>

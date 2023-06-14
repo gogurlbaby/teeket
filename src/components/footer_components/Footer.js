@@ -5,8 +5,8 @@ import image3 from "../../assets/discoverpage_images/Rectangle 1703.png";
 import image4 from "../../assets/discoverpage_images/Rectangle 1706.png";
 import image5 from "../../assets/discoverpage_images/Rectangle 1708.png";
 import vector1 from "../../assets/discoverpage_images/vect.png";
-import vector2 from "../../assets/discoverpage_images/vectt.png";
-import chatDot from "../../assets/discoverpage_images/ChatDots.png";
+import vector2 from "../../assets/discoverpage_images/vectt.svg";
+import chatDot from "../../assets/discoverpage_images/ChatDots.svg";
 
 function Footer() {
 
@@ -19,13 +19,14 @@ function Footer() {
   return (
     <div>
       <main
-        class=" w-[375px] h-[835px] bg-[#110011]
-      mx-8 mt-[4rem] pt-[.9rem] pl-[1rem]"
+        class="w-full h-[835px] bg-[#110011]
+      mt-[2rem] pt-[3rem]"
       >
         <div
-          class="pl-[.5rem] w-[343px] h-[310px]  mt-[1.5rem]
-      pt-[1.7rem] text-center
-      bg-gradient-to-bl from-[#FF0303] via-[#6f00f6] rounded-[1rem] "
+          class="md:w-[700px] md:flex md:flex-col md:justify-center md:items-center pl-[.5rem] w-[343px]
+      pt-[1.7rem] text-center mx-auto pb-[1.875rem]
+      rounded-[1rem] "
+      style={{background: "linear-gradient(217.73deg, #FF0303 -11.96%, #0052F6 68.7%)"}}
         >
           <div class=" flex">
             <div>
@@ -86,12 +87,13 @@ function Footer() {
 
           <button
             type="button"
-            class=" w-[167px] rounded-[1rem] mt-[1.7rem] text-[#0052F6] text-center font-bold text-[12px] h-[48px] bg-[#FFFFFF]"
+            class=" md:px-[6rem] md:py-[1.2rem] md:text-[16px] px-[3rem] py-[1rem] rounded-[1rem] mt-[1.7rem] text-[#0052F6] text-center font-bold text-[12px] bg-[#FFFFFF]"
           >
             Book an event
           </button>
         </div>
 
+        <div class="mx-[1rem] md:mx-[4rem]">
         <div>
           <div class="mt-[1rem]">
             <span class="text-[#989898] text-[12px] font-medium">MENU</span>
@@ -160,6 +162,7 @@ function Footer() {
           <p class="font-extralight text-[11.7px] text-[#ffffff83] text-center mt-[1.4rem]">
             HerTechTrail Capstone project, designed by GROUP 2
           </p>
+        </div>
         </div>
       </main>
     </div>

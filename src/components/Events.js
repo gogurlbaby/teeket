@@ -30,7 +30,7 @@ function Events() {
   };
 
   return (
-    <div>
+    <div class="md:flex md:justify-center md:items-center">
       <main class="pl-[2rem] pr-[2rem] ">
         <h1 class="mt-[3rem] mb-[1rem] text-[24px] font-medium">
           Discover events near you
@@ -47,12 +47,12 @@ function Events() {
               onChange={handleSearch}
             />
           </form>
-          <div class="w-[35%]   pl-[2rem]">
+          <div class="w-[35%] pl-[2rem]">
             {<img src={filterImage} alt="icon" />}
           </div>
         </div>
-
-        <div class="flex display justify-between ">
+        
+        <div class="flex gap-x-[2rem] pb-[1rem]">
           <div class="w-[164px] h-[84px] bg-[#FBBF0A] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
             <img src={music} alt="music-icon" />
             <p>Music</p>
@@ -63,7 +63,7 @@ function Events() {
           </div>
         </div>
 
-        <div class="flex mt-[1rem] justify-between  ">
+        <div class="flex gap-x-[2rem]">
           <div class="w-[164px] h-[84px] bg-[#B0E298] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
             <img src={music} alt="music-icon" />
             <p>Arts and Culture </p>
@@ -123,7 +123,7 @@ function Events() {
           <button
             type="button"
             onClick={handleButtonClick}
-            class=" w-[343px] bg-[#E1E4EB] text-center h-[60px] mt-[1rem]"
+            class=" w-[343px] bg-[#E1E4EB] text-center rounded-xl h-[60px] mt-[1rem]"
           >
             Discover more
           </button>
