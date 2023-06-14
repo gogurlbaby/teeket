@@ -3,6 +3,12 @@ import "../../App.css";
 import { attendanceArray } from "../../AttendeesData";
 import { useState } from "react";
 import { remainEvents } from "../../AttendeesData";
+import sponsor_one from "../../assets/attendees_image/sponsor1.png";
+import sponsor_two from "../../assets/attendees_image/sponsor2.png";
+import sponsor_three from "../../assets/attendees_image/sponsor3.png";
+import sponsor_four from "../../assets/attendees_image/sponsor4.png";
+import sponsor_five from "../../assets/attendees_image/sponsor5.png";
+import sponsor_six from "../../assets/attendees_image/sponsor6.png";
 
 function Attendees() {
   //Button functionality
@@ -94,10 +100,24 @@ function Attendees() {
             <button
               type="button"
               onClick={handleButtonClick}
-              className="w-[300px] bg-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500  text-center h-[60px] mt-[1rem] text-xl"
+              className="w-[300px] bg-[#0052f6] text-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500  text-center h-[60px] mt-[1.2rem] text-xl"
             >
               Discover more
             </button>
+          </div>
+          <p className="mt-[0.8rem] font-medium text-xl text-center">
+            More than 1000+ leading event companies choose Teeket
+          </p>
+
+          <div className="flex mb-[0.5rem]">
+            <img className="w-60" src={sponsor_one} alt="firsttestimonial" />
+            <img className="w-60" src={sponsor_two} alt="firsttestimonial" />
+            <img className=" w-60" src={sponsor_three} alt="firsttestimonial" />
+          </div>
+          <div className="flex mr-[10px]">
+            <img className=" w-60" src={sponsor_four} alt="firsttestimonial" />
+            <img className="w-50" src={sponsor_five} alt="firsttestimonial" />
+            <img className="w-60" src={sponsor_six} alt="firsttestimonial" />
           </div>
 
           {showHiddenObjects
