@@ -93,7 +93,7 @@ function Footer() {
           </button>
         </div>
 
-        <div class="mx-[1rem] md:mx-[4rem]">
+        <div class="mx-[3rem] md:mx-[4.5rem]">
         <div>
           <div class="mt-[1rem]">
             <span class="text-[#989898] text-[12px] font-medium">MENU</span>
