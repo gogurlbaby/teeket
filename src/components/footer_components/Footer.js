@@ -137,7 +137,7 @@ function Footer() {
             <div class="flex">
               <img src={vector2} alt="vector" />
               <p class="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem]">
-                09136605067
+                09136605062
               </p>
             </div>
 
