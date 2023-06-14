@@ -57,7 +57,7 @@ export let remainEvents = [
     title: "Swimming Trainings",
     image: "event_image3",
     price: "FREE",
-    image: "/images/event_image1.png",
+    images: "/images/event_image1.png",
     mapline: "/images/MapPinLine.png",
     icon: "/images/eventcreator_3.png",
   },

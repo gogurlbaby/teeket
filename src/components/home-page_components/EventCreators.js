@@ -12,7 +12,11 @@ function EventCreators() {
           More than 1 million people across 5 continents choose Teeket
         </h6>
       </div>
-      <img src={image} class="md:min-w-[50%] mx-auto mt-[2rem]" alt="user-pictures" />
+      <img
+        src={image}
+        class="md:min-w-[50%] mx-auto mt-[2rem]"
+        alt="user-pictures"
+      />
     </div>
   );
 }
