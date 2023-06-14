@@ -136,7 +136,7 @@ function Login() {
           <section>
             <input
               type="email"
-              className="w-[350px] form-input py-3 px-6 rounded-lg my-4 bg-[#EDEDED] border border-gray-300"
+              className="md:w-[500px] md:text-center w-[350px] form-input py-3 px-6 rounded-xl my-4 bg-[#EDEDED] border border-gray-300"
               placeholder="Enter your email address"
               id="email"
               name="email"
@@ -154,7 +154,7 @@ function Login() {
           <section>
             <input
               type="password"
-              className=" w-[350px] form-input py-3 px-6 rounded-lg bg-[#EDEDED] border border-gray-300"
+              className="md:w-[500px] md:text-center w-[350px] form-input py-3 px-6 rounded-xl bg-[#EDEDED] border border-gray-300"
               placeholder="Enter your password"
               id="password"
               name="password"
@@ -172,22 +172,22 @@ function Login() {
           </section>
           <button
             type="button"
-            className="w-[350px] bg-[#0052f6] py-2 pb-3 px-4 my-4 text-[#FFFFFF] items-center justify-center text-center rounded-[12px] text-sm- font-bold  font-light flex flex-row rounded-lg border border-grey-500"
+            className="md:w-[500px] w-[350px] bg-[#0052f6] py-3 pb-3 px-4 my-4 text-[#FFFFFF] items-center justify-center text-center rounded-[12px] text-sm- font-bold  font-light flex flex-row rounded-lg border border-grey-500"
             onClick={onSubmit}
           >
             Continue with Email
           </button>
           <ToastContainer />
         </form>
-        <h4 className="text-[#8F8F8F] my-6 text-center	">
+        <h4 className="text-[#8F8F8F] my-4 text-center font-bold text-[14px]">
           By continuing, you acknowledge that you have read <br /> and
           understood, and agree to Teeket’s{" "}
-          <span className="underline decoration-solid font-bold">
+          <span className="underline decoration-solid font-bold text-[#000000]">
             Terms of Service
           </span>{" "}
           and{" "}
-          <span className="underline decoration-solid font-bold">
-            Privacy Policy.
+          <span className="underline decoration-solid font-bold text-[#000000]">
+           Privacy Policy.
           </span>
         </h4>
       </div>

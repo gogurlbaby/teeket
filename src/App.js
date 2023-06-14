@@ -10,10 +10,10 @@ import AttendeesEvent from "./pages/AttendeesEvent";
 function App() {
   return (
     <>
-      <div className="App">{/* <Navbar /> */}</div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="graph" element={<Graph />} />
