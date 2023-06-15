@@ -8,7 +8,7 @@ import { remainEvents } from "../Eventdata";
 
 function Events() {
   //Button functionality
-  const [/*displayedObjects,*/ setDisplayedObjects] = useState([]);
+  const [displayedObjects, setDisplayedObjects] = useState([]);
   const [showHiddenObjects, setShowHiddenObjects] = useState(false);
   const handleButtonClick = () => {
     setShowHiddenObjects(true);
