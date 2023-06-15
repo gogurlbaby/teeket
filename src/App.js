@@ -15,9 +15,8 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="login" element={<LoginPage />} />
-          <Route path="graph" element={<Graph />} />
           <Route path="discover-events" element={<DiscoverEvent />} />
+          <Route path="graph" element={<Graph />} />
           <Route path="trending-events" element={<AttendeesEvent />} />
         </Routes>
       </BrowserRouter>
