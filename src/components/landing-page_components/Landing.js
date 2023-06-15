@@ -4,8 +4,10 @@ import girl from "../../assets/landing_images/landing_image3.svg";
 import boy from "../../assets/landing_images/landing_image5.svg";
 import img from "../../assets/landing_images/landing_image1.svg";
 import background_image from "../../assets/landing_images/landing_page.png";
+import { useNavigate } from "react-router-dom";
 
 function Landing() {
+  const navigate = useNavigate()
   return (
     <>
       <div
@@ -43,20 +45,20 @@ function Landing() {
           </h3>
         </div>
         <div className="flex items-center justify-center">
-          <a
-            href="/login"
+          <button
+          onClick={() => navigate("/login")}
             className="md:px-[10rem] text-[#FFFFFF] font-medium text-base no-underline py-[1.125rem] px-[6rem] rounded-xl bg-[#0052F6]"
           >
             Create an event
-          </a>
+          </button>
         </div>
         <div className="md:mt-[3rem] flex items-center justify-center mt-[1.5rem]">
-          <a
-            href="/discover-events"
+           <button
+           onClick={() => navigate("/discover-events")}
             className="md:px-[10rem] text-[#101010] font-medium text-base no-underline py-[1.125rem] px-[6rem] rounded-xl bg-[#FFFFFF]"
           >
             Discover events
-          </a>
+            </button>
         </div>
       </div>
     </>
