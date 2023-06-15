@@ -12,7 +12,6 @@ function NavbarLogin() {
   return (
     <>
       <Navbar
-        className="h-[100px] w-full flex justify-between pt-[1.5rem] px-[1rem] shadow-lg "
         expand="md"
       >
         <Container fluid>

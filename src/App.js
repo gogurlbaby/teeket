@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import Graph from "./components/Graph_components/graph.js";
 import DiscoverEvent from "./pages/DiscoverEvent";
 import AttendeesEvent from "./pages/AttendeesEvent";
+import {ToastContainer} from 'react-toastify';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/trending-events" element={<AttendeesEvent />} />
         </Routes>
       </BrowserRouter>
+       <ToastContainer />
     </>
   );
 }
