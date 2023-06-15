@@ -13,7 +13,7 @@ function NavBar() {
     <>
       <Navbar className="h-[80px] w-full pt-[1.5rem] px-[1rem]" expand="md">
         <Container fluid>
-          <Navbar.Brand href="/">
+          <Navbar.Brand>
             <img src={logo} alt="teeket-logo" />
           </Navbar.Brand>
           <button

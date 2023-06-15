@@ -26,13 +26,13 @@ function Carousel() {
 
   return (
     <div>
-     <img src={carouselItems[currentIndex]} alt="Carousel Item" class="md:min-w-[80%]" />
-      <div class="flex mt-[1.5rem] ml-[35%]">
+     <img src={carouselItems[currentIndex]} alt="Carousel Item" className="md:min-w-[80%]" />
+      <div className="flex mt-[1.5rem] ml-[35%]">
       <button onClick={handlePrevious}>
-      <img src={back_arrow} alt="back-arrow" class="mr-[0.813rem]"/>
+      <img src={back_arrow} alt="back-arrow" className="mr-[0.813rem]"/>
       </button>
       <button onClick={handleNext}>
-      <img src={forward_arrow} alt="forward-arrow" class="ml-[0.813rem]" />
+      <img src={forward_arrow} alt="forward-arrow" className="ml-[0.813rem]" />
       </button>
       </div>
     </div>

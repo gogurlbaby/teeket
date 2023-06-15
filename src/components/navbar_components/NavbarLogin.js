@@ -16,7 +16,7 @@ function NavbarLogin() {
         expand="md"
       >
         <Container fluid>
-          <Navbar.Brand href="/">
+          <Navbar.Brand>
             <img src={logo} alt="teeket-logo" />
           </Navbar.Brand>
           <button

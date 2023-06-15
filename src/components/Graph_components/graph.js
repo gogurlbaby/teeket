@@ -9,6 +9,7 @@ import NavBar from "../navbar_components/Navbar";
 import vector from "../../assets/graph_images/Vector.svg";
 
 function Graph() {
+  
   let Tops = [
     {
       name: john2,
@@ -33,11 +34,11 @@ function Graph() {
       <div className="p-2 pt-8   ">
         <div className="flex p-4">
           <img src={vector} alt="frame"></img>
-          <a href="/" className="no-underline text-gray-800" >
-            <h3 className="pl-4 pt-1 text-base font-semi-bold no-underline">
+          {/* <a href="" className="no-underline text-gray-800" > */}
+            <button className="pl-4 pt-1 text-base font-semi-bold no-underline">
             Go Back
-            </h3>
-          </a>
+            </button>
+          {/* </a> */}
         </div>
         <div className="flex justify-between p-2">
           <div className="p-2">

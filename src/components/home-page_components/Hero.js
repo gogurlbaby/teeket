@@ -10,12 +10,12 @@ function Hero() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      class=" rounded-b-[50px] py-[6rem] mt-4"
+      className=" rounded-b-[50px] py-[6rem] mt-4"
     >
-      <div class="text-white pt-10 px-10">
-        <div class="md:text-center text-white pt-10 px-10">
-          <h1 class="text-[32px] font-bold">Struggling to sell tickets?</h1>
-          <h6 class="text-[16px] font-normal mt-5">
+      <div className="text-white pt-10 px-10">
+        <div className="md:text-center text-white pt-10 px-10">
+          <h1 className="text-[32px] font-bold">Struggling to sell tickets?</h1>
+          <h6 className="text-[16px] font-normal mt-5">
             Create events and sell tickets in minutes-at no cost -with the only
             event platform you need
           </h6>
@@ -23,7 +23,7 @@ function Hero() {
         <Link to="/login">
         <button
           type="submit"
-          class="md:text-[20px] md:mt-[3rem] md:px-[150px] flex justify-center items-center py-[18px] px-[95px] mx-auto mt-[1.5rem] font-medium text-base text-[#FFFFFF] bg-[#0052F6] rounded-xl"
+          className="md:text-[20px] md:mt-[3rem] md:px-[150px] flex justify-center items-center py-[18px] px-[95px] mx-auto mt-[1.5rem] font-medium text-base text-[#FFFFFF] bg-[#0052F6] rounded-xl"
         >
           Create an event
         </button>
