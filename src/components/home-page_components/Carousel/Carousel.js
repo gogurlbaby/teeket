@@ -26,7 +26,7 @@ function Carousel() {
 
   return (
     <div>
-     {/* <img src={carouselItems[currentIndex]} alt="Carousel Item" className="md:min-w-[80%]" />
+     <img src={carouselItems[currentIndex]} alt="Carousel Item" className="md:min-w-[80%]" />
       <div className="flex mt-[1.5rem] ml-[35%]">
       <button onClick={handlePrevious}>
       <img src={back_arrow} alt="back-arrow" className="mr-[0.813rem]"/>
@@ -34,7 +34,7 @@ function Carousel() {
       <button onClick={handleNext}>
       <img src={forward_arrow} alt="forward-arrow" className="ml-[0.813rem]" />
       </button>
-      </div> */}
+      </div>
     </div>
   )
 }

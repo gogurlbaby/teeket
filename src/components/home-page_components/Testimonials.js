@@ -1,8 +1,4 @@
 import React from "react";
-import back_arrow from "../../assets/other-images/backarrow.svg";
-import forward_arrow from "../../assets/other-images/forwardarrow.svg";
-import first_testimony from "../../assets/homepage_images/Frame 126.svg";
-import second_testimony from "../../assets/homepage_images/Frame 136.svg";
 import Carousel from "./Carousel/Carousel";
 
 function Testimonials() {
