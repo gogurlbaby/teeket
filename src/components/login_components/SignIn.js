@@ -8,60 +8,47 @@ import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
 } from "firebase/auth";
-// import { loginValidate } from "../../userValidation";
-
 import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-// import { zodResolver } from "@hookform/resolvers/zod";
 import * as yup from "yup";
 
 function Login() {
-  // yup rules for input values and types
-  const loginValidate = yup
-    .object({
-      email: yup.string().email("must be a valid email").required(),
-      password: yup
-        .string()
-        .required()
-        .min(3, "must be at least 3 characters long"),
-    })
-    .required();
-
-  // reack hook form to get values, handle errors and use yup as schema validator
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
-    defaultValues: {
-      email: "",
-      password: "",
-    },
-    resolver: yupResolver(loginValidate),
+  const loginValidate = yup.object({
+    email: yup.string().email("Invalid email").required("Your email is required"),
+    password: yup.string()
+      .required("Password is required")
+      .min(3, "Must be at least 3 characters long")
   });
 
   const navigate = useNavigate();
-  const [formInput, setformInput] = useState({ email: "", password: "" });
+  const [formInput, setFormInput] = useState({ email: "", password: "" });
   const { email, password } = formInput;
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }
+  } = useForm({
+    defaultValues: {
+      email: "",
+      password: ""
+    },
+    resolver: yupResolver(loginValidate)
+  });
+
   const onChange = (e) => {
-    setformInput((prevState) => ({
+    setFormInput((prevState) => ({
       ...prevState,
-      [e.target.id]: e.target.value,
+      [e.target.id]: e.target.value
     }));
   };
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
+  const onSubmit = async () => {
     try {
       const auth = getAuth();
-      const userCredential = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
       const formDataCopy = { ...formInput };
       delete formDataCopy.password;
@@ -71,7 +58,7 @@ function Login() {
       navigate("/home");
       toast.success("Successful Login!");
     } catch (error) {
-      toast.error("Oops..Try again!");
+      toast.error("Oops...Try again!");
     }
   };
 
@@ -88,110 +75,91 @@ function Login() {
         await setDoc(doc(firebaseSetup, "users", user.uid), {
           name: user.displayName,
           email: user.email,
-          timestamp: serverTimestamp(),
+          timestamp: serverTimestamp()
         });
       }
       navigate("/home");
       toast.success("Successful Login!");
     } catch (error) {
-      toast.error("Oops..Try again!");
+      toast.error("Oops...Try again!");
     }
   };
+
   return (
-    <>
-      <div className="flex items-center justify-center flex-col overflow-auto mt-6">
-        <div>
-          <h3 className="text-2xl font-semibold">
-            Log in or sign up to continue
-          </h3>
-        </div>
-        {/* option 1 for google signin */}
-        <div className="py-6">
-          <button
-            type="button"
-            className="bg-[#FFFFFF] py-2 px-16 text-[#1F1F1F] text-base font-bold flex flex-row rounded-lg border border-grey-500"
-            onClick={onGoogleClick}
-          >
-            <img src={google} alt="google-logo" className="px-3" />
-            Continue with Google
-          </button>
-        </div>
-
-        {/*  horizontal rule*/}
-        <div className="inline-flex items-center justify-center w-full">
-          <hr className=" w-64 h-px my-3 bg-gray-300 border-0 dark:bg-gray-700" />
-          <span className="absolute px-3 font-medium text-gray-500 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
-            or
-          </span>
-        </div>
-
-        {/* <div class="relative flex py-5 items-center w-64">
-          <div class="flex-grow border-t border-gray-200"></div>
-          <span class="flex-shrink mx-4 text-gray-400">or</span>
-          <div class="flex-grow border-t border-gray-200"></div>
-        </div> */}
-
-        {/* option 2: sign in via email and paasword */}
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <section>
-            <input
-              type="email"
-              className="lg:w-[50rem] md:w-[40rem] md:text-center w-[350px] form-input py-3 px-6 rounded-xl my-4 bg-[#EDEDED] border border-gray-300"
-              placeholder="Enter your email address"
-              id="email"
-              name="email"
-              value={email}
-              {...register("email")}
-              onChange={onChange}
-            />
-            <p>{errors.email?.message}</p>
-            {errors.email && (
-              <p style={{ color: "red", fontSize: "30px" }}>
-                {errors.email.message}
-              </p>
-            )}
-          </section>
-          <section>
-            <input
-              type="password"
-              className="lg:w-[50rem] md:w-[40rem] md:text-center w-[350px] form-input py-3 px-6 rounded-xl bg-[#EDEDED] border border-gray-300"
-              placeholder="Enter your password"
-              id="password"
-              name="password"
-              value={password}
-              {...register("password")}
-              onChange={onChange}
-              minLength="8"
-              autoComplete="on"
-            />
-            {errors.password && (
-              <p style={{ color: "red", fontSize: "30px" }}>
-                {errors.password.message}
-              </p>
-            )}
-          </section>
-          <button
-            type="button"
-            className="lg:w-[50rem] md:w-[40rem] justify-center items-center w-[350px] bg-[#0052f6] py-3 pb-3 px-4 my-4 text-[#FFFFFF] text-center rounded-[12px] text-sm font-bold flex flex-row border border-grey-500"
-            onClick={onSubmit}
-          >
-            Continue with Email
-          </button>
-         
-        </form>
-        <h4 className="text-[#8F8F8F] my-3 text-center font-bold text-[14px]">
-          By continuing, you acknowledge that you have read <br /> and
-          understood, and agree to Teeket’s{" "}
-          <span className="underline decoration-solid font-bold text-[#000000]">
-            Terms of Service
-          </span>{" "}
-          and{" "}
-          <span className="underline decoration-solid font-bold text-[#000000]">
-           Privacy Policy.
-          </span>
-        </h4>
+    <div className="flex items-center justify-center flex-col overflow-auto mt-6">
+      <div>
+        <h3 className="text-2xl font-semibold">Log in or sign up to continue</h3>
       </div>
-    </>
+      {/* option 1 for Google sign-in */}
+      <div className="py-6">
+        <button
+          type="button"
+          className="bg-[#FFFFFF] py-2 px-16 text-[#1F1F1F] text-base font-bold flex flex-row rounded-lg border border-grey-500"
+          onClick={onGoogleClick}
+        >
+          <img src={google} alt="google-logo" className="px-3" />
+          Continue with Google
+        </button>
+      </div>
+
+      {/* horizontal rule */}
+      <div className="inline-flex items-center justify-center w-full">
+        <hr className="w-64 h-px my-3 bg-gray-300 border-0 dark:bg-gray-700" />
+        <span className="absolute px-3 font-medium text-gray-500 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+          or
+        </span>
+      </div>
+
+      {/* option 2: sign in via email and password */}
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <section>
+          <input
+            type="email"
+            className="lg:w-[50rem] md:w-[40rem] md:text-center w-[350px] form-input py-3 px-6 rounded-xl my-4 bg-[#EDEDED] border border-gray-300"
+            placeholder="Enter your email address"
+            id="email"
+            name="email"
+            value={email}
+            {...register("email")}
+            onChange={onChange}
+          />
+          {<p style={{ color: "red", fontSize: "16px" }}>{errors.email?.message}</p>}
+        </section>
+        <section>
+          <input
+            type="password"
+            className="lg:w-[50rem] md:w-[40rem] md:text-center w-[350px] form-input py-3 px-6 rounded-xl bg-[#EDEDED] border border-gray-300"
+            placeholder="Enter your password"
+            id="password"
+            name="password"
+            value={password}
+            {...register("password")}
+            onChange={onChange}
+            minLength="8"
+            autoComplete="on"
+          />
+         {<p style={{ color: "red", fontSize: "16px" }}>{errors.email?.message}</p>}
+        </section>
+        <button
+          type="submit"
+          className="lg:w-[50rem] md:w-[40rem] justify-center items-center w-[350px] bg-[#0052f6] py-3 pb-3 px-4 my-4 text-[#FFFFFF] text-center rounded-[12px] text-sm font-bold flex flex-row border border-grey-500"
+        >
+          Continue with Email
+        </button>
+      </form>
+      <h4 className="text-[#8F8F8F] my-3 text-center font-bold text-[14px]">
+        By continuing, you acknowledge that you have read
+        <br /> and understood, and agree to Teeket’s{" "}
+        <span className="underline decoration-solid font-bold text-[#000000]">
+          Terms of Service
+        </span>{" "}
+        and{" "}
+        <span className="underline decoration-solid font-bold text-[#000000]">
+          Privacy Policy.
+        </span>
+      </h4>
+    </div>
   );
 }
+
 export default Login;

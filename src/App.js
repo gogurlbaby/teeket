@@ -7,6 +7,7 @@ import Graph from "./components/Graph_components/graph.js";
 import DiscoverEvent from "./pages/DiscoverEvent";
 import AttendeesEvent from "./pages/AttendeesEvent";
 import {ToastContainer} from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
