@@ -2,7 +2,7 @@ import React from "react";
 import Tee from "../../assets/landing_images/landing_teeket_logo.svg";
 import girl from "../../assets/landing_images/landing_image3.svg";
 import boy from "../../assets/landing_images/landing_image5.svg";
-import img from "../../assets/landing_images/landing_image1.svg";
+import img from "../../assets/landing_images/Frame 163.svg";
 import background_image from "../../assets/landing_images/landing_page.png";
 import { useNavigate } from "react-router-dom";
 
@@ -20,25 +20,9 @@ function Landing() {
           <img src={Tee} alt="logo" />
         </div>
         <div className="flex justify-center align-center mt-[3.063rem]">
-          <div className="flex justify-center align-center flex-wrap space-x-3 w-1/2 h-40 mx-2">
-            <div className="h-12 w-14 rounded-md bg-contain bg-no-repeat">
-              <img src={girl} className="w-full" alt="logo" />
-            </div>
-            <div className="flex justify-center items-center bg-[#03A4FF] h-12 w-28 rounded-xl text-white font-bold">
-              #Trending
-            </div>
-            <div className="flex justify-center items-center bg-[#FDD015] h-12 w-24 text-[#101010] font-bold text-[16px] rounded-xl">
-              Hot event
-            </div>
-            <div className="h-12 w-14">
-              <img src={boy} className="w-full" alt="logo" />
-            </div>
-          </div>
-          <div className="w-40 h-32 mt-2 mr-3">
-            <img src={img} className="w-full" alt="logo" />
-          </div>
+          <img src={img} alt="" className="md:w-[40rem] lg:w-[60rem]"/>
         </div>
-        <div className=" flex items-center justify-center mb-4">
+        <div className="flex items-center justify-center my-4">
           <h3 className="md:my-4 text-white font-normal text-center text-[18px]">
             Your one stop platform to create,manage and promote your events at
             your convinence.

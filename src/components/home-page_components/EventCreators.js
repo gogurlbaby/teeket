@@ -1,11 +1,11 @@
 import React from "react";
-import image from "../../assets/homepage_images/user pictures.jpg";
+import image from "../../assets/homepage_images/user pictures.svg";
 
 function EventCreators() {
   return (
     <div className="bg-[#FFFFFF] py-10">
       <div className="text-center">
-        <h2 className="md:text-[28px] text-[24px] font-bold text-[#1A1919] text-center">
+        <h2 className="md:text-[32px] text-[24px] font-bold text-[#1A1919] text-center">
           Empowering event creators everywhere
         </h2>
         <h6 className="md:text-[20px] text-[14px] mt-[1rem] font-bold text-[#000000] text-center">
@@ -14,7 +14,7 @@ function EventCreators() {
       </div>
       <img
         src={image}
-        className="md:min-w-[50%] mx-auto mt-[2rem]"
+        className="md:w-full mx-auto mt-[2rem]"
         alt="user-pictures"
       />
     </div>

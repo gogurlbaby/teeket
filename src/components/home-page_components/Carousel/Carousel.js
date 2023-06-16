@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import back_arrow from "../../../assets/other-images/backarrow.svg"
 import forward_arrow from "../../../assets/other-images/forwardarrow.svg"
-import first_testimony from "../../../assets/homepage_images/Frame 140.svg"
+import first_testimony from "../../../assets/homepage_images/Frame 140@2x.jpg"
 import second_testimony from "../../../assets/homepage_images/Frame 136.svg"
 
 
@@ -10,7 +10,7 @@ function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Array of carousel items
-  let carouselItems = [first_testimony, second_testimony, first_testimony];
+  let carouselItems = [first_testimony, second_testimony];
 
   // Function to handle next button click
   const handleNext = () => {
@@ -26,13 +26,13 @@ function Carousel() {
 
   return (
     <div>
-     <img src={carouselItems[currentIndex]} alt="Carousel Item" className="md:min-w-[80%]" />
-      <div className="flex mt-[1.5rem] ml-[35%]">
+     <img src={carouselItems[currentIndex]} alt="Carousel Item" className="md:w-full" />
+      <div className="flex justify-center items-center mt-[1.5rem]">
       <button onClick={handlePrevious}>
-      <img src={back_arrow} alt="back-arrow" className="mr-[0.813rem]"/>
+      <img src={back_arrow} alt="back-arrow" className="md:w-full mr-[0.813rem]"/>
       </button>
       <button onClick={handleNext}>
-      <img src={forward_arrow} alt="forward-arrow" className="ml-[0.813rem]" />
+      <img src={forward_arrow} alt="forward-arrow" className="md:w-full ml-[0.813rem]" />
       </button>
       </div>
     </div>
