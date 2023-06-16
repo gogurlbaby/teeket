@@ -32,17 +32,19 @@ function NavbarLogin() {
             responsive="lg"
             id="responsive-navbar-nav"
             placement="end"
-            style={{ width: "178px" }}
+            style={{ width: "50%" }}
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title> </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="/">Teeket</Nav.Link>
-                <Nav.Link href="/home">Home</Nav.Link>
-                <Nav.Link href="/discover-events">Discover</Nav.Link>
-                <Nav.Link href="/trending-events">Book Events</Nav.Link>
+              <ul>
+                  <li><a href="/">Teeket</a></li>
+                  <li><a href="/home">Home</a></li>
+                  <li><a href="/discover-events">Discover Events</a></li>
+                  <li><a href="/trending-events">Book Events</a></li>
+              </ul>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

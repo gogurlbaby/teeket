@@ -37,18 +37,13 @@ function NavBar() {
               <Offcanvas.Title> </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav className="list-items justify-content-end flex-grow-1 pe-3 mr-[1rem]">
+              <Nav className="justify-content-end flex-grow-1 pe-3 mr-[1rem]">
                 <ul>
                   <li><a href="/">Teeket</a></li>
                   <li><a href="/home">Home</a></li>
                   <li><a href="/discover-events">Discover Events</a></li>
                   <li><a href="/trending-events">Book Events</a></li>
                 </ul>
-                
-                {/* <Nav.Link href="/">Teeket</Nav.Link>
-                <Nav.Link href="/home">Home</Nav.Link>
-                <Nav.Link href="/discover-events">Discover</Nav.Link>
-                <Nav.Link href="/trending-events">Book Events</Nav.Link> */}
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
