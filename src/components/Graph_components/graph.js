@@ -1,6 +1,6 @@
 import React from "react";
 import graph1 from "../../assets/graph_images/Graph.svg";
-import info from "../../assets/graph_images/Info.jpg";
+import info from "../../assets/graph_images/Info.svg";
 import jane2 from "../../assets/graph_images/jane3.svg";
 import john2 from "../../assets/graph_images/john3.svg";
 import daniel2 from "../../assets/graph_images/daniel3.svg";
