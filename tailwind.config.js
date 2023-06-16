@@ -6,7 +6,12 @@ module.exports = {
       sans: ["sans-serif"],
       serif: ["Manrope", "serif"],
     },
-    extend: {},
+    extend: {
+      screens:{
+        'md':{'min':'400px'},
+        'lg':{'min':'760px'}
+      }
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };
