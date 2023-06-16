@@ -13,7 +13,7 @@ function TicketFeatures() {
       <h4 
       className="
        md:text-center 
-       md:text-[36px] 
+       md:text-[28px] 
        text-[#0052F6] 
        font-bold 
        text-[18px] ml-[1rem]
@@ -34,12 +34,12 @@ function TicketFeatures() {
            key={feature.id}
            >
             <div className="flex ml-[1rem]">
-              <span className="md:text-[24px] text-[14px] font-bold text-blue-400">
+              <span className="md:text-[20px] text-[14px] font-bold text-blue-400">
                 {feature.number}
               </span>
               <h3 
               className="
-               md:text-[28px] 
+               md:text-[24px] 
                text-[14px] 
                font-bold 
                text-[#2068F7] 
@@ -49,7 +49,7 @@ function TicketFeatures() {
             </div>
             <h6 
              className="
-              md:text-[24px] 
+              md:text-[20px] 
               text-[14px] 
               font-[400px] 
               text-[#000000] 
