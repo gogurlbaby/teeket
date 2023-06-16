@@ -14,19 +14,22 @@ function Hero() {
     >
       <div className="text-white pt-10">
         <div className="md:text-center text-white px-10">
-          <h1 className="md:text-[38px] text-[32px] font-bold">Struggling to sell tickets?</h1>
-          <h6 className="md:text-[20px] text-[16px] font-normal mt-4">
+          <h1 className="md:text-[36px] text-[32px] font-bold">Struggling to sell tickets?</h1>
+          <h6 className="md:text-[18px] text-[16px] font-normal mt-4">
             Create events and sell tickets in minutes-at no cost -with the only
             event platform you need
           </h6>
         </div>
-        <Link to="/login">
+        <Link 
+        to="/login"
+        className=" no-underline"
+        >
         <button
           type="submit"
           className="
-          md:text-[24px] 
+          md:text-[18px] 
           md:mt-[3rem] 
-          md:py-[2rem]
+          
           md:px-[10rem] 
           md:rounded-2xl
           flex 
