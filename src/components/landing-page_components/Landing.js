@@ -1,7 +1,5 @@
 import React from "react";
 import Tee from "../../assets/landing_images/landing_teeket_logo.svg";
-import girl from "../../assets/landing_images/landing_image3.svg";
-import boy from "../../assets/landing_images/landing_image5.svg";
 import img from "../../assets/landing_images/Frame 163.svg";
 import background_image from "../../assets/landing_images/landing_page.png";
 import { useNavigate } from "react-router-dom";
