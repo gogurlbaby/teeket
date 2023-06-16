@@ -33,20 +33,18 @@ function Graph() {
     
       <NavBar />
       <div className="">
-      <div className=" justify-center align-center  lg:p-[1.5rem]">
+      <div className=" justify-center align-center md:p-[1.5rem]">
         <div className="flex p-4">
-          <img src={vector} alt="frame"></img>
-          {/* <a href="" className="no-underline text-gray-800" > */}
-            <button className="pl-4 pt-1 text-base font-semi-bold no-underline lg:text-[30px] ">
+          <img src={vector} alt="frame" className="relative top-1"/>
+            <button className="pl-4 pt-1 text-base font-semi-bold no-underline md:text-[18px] ">
             Go Back
             </button>
-          {/* </a> */}
         </div>
         <div className="flex justify-between p-2">
-          <div className="p-2">
-            <h2 className="font-semi-bold text-lg pb-2 lg:text-[30px]">Registration</h2>
-            <p className="font-light  text-gray-500 lg:text-[30px]">
-              see all registered attendees detail
+          <div className="pl-3">
+            <h2 className="font-semi-bold text-lg pb-2 md:text-[26px]">Registration</h2>
+            <p className="font-light  text-gray-500 lg:text-[18px]">
+              See all registered attendees detail
             </p>
           </div>
           <div /*relative pt-2*/>
@@ -64,25 +62,25 @@ function Graph() {
         </div>
 
         <div className="flex justify-center p-2">
-          <img src={graph1} className="w-full p-2" alt="graph"></img>
+          <img src={graph1} className="w-full mr-auto" alt="graph"/>
         </div>
         <div className="p-3">
-          <h3 className="text-lg pt-3 font-bold ml-4 lg:text-[30px]">Event views</h3>
+          <h3 className="text-base pt-3 font-bold ml-4 md:text-[24px]">Event views</h3>
         </div>
         <div className="flex justify-between p-1 pl-2 pr-2">
           <div className="flex flex-col p-2">
-            <h3 className="pb-3 pl-2 text-lg text-gray-400 lg:text-[30px]">Total views</h3>
-            <p className="font-bold text-lg pl-3 lg:text-[30px]">240</p>
+            <h3 className="pb-3 pl-2 text-lg text-gray-400 md:text-[24px]">Total views</h3>
+            <p className="font-bold text-base pl-3 md:text-center md:text-[20px]">240</p>
           </div>
           <div className="border-r-4   "> </div>
           <div className="flex flex-col p-2 ">
-            <h3 className="pb-3 pl-2 text-lg text-gray-400 lg:text-[30px]">Total RSVPs</h3>
-            <p className="font-bold text-lg pl-3 lg:text-[30px]">240</p>
+            <h3 className="pb-3 pl-2 text-lg text-gray-400 md:text-[24px]">Total RSVPs</h3>
+            <p className="font-bold text-base pl-3 md:text-center md:text-[20px]">24</p>
           </div>
           <div className="border-r-4    "> </div>
           <div className="flex flex-col p-2">
-            <h3 className="pb-3 pl-2 text-lg text-gray-400 lg:text-[30px]">Total Shares</h3>
-            <p className="font-bold text-lg pl-3 lg:text-[30px]">240</p>
+            <h3 className="pb-3 pl-2 text-lg text-gray-400 md:text-[24px]">Total Shares</h3>
+            <p className="font-bold text-base pl-3 md:text-center md:text-[24px]">30</p>
           </div>
         </div>
         <div className=" flex p-3 pt-4">
@@ -92,19 +90,19 @@ function Graph() {
         <div>
           {Tops.map((top, index) => {
             return (
-              <div className=" flex justify-between justify-center ">
-                <div className="flex p-3 ">
+              <div className="md:justify-between flex">
+                <div className="flex p-3">
                   <img
                     src={top.name}
-                    className="rounded-full "
+                    className="rounded-full"
                     alt="name"
-                  ></img>
-                  <h3 className="pl-2 pt-1 font-semi-bold text-gray-600 lg:text-[40px]">
+                    />
+                  <h6 className="pl-2 pt-1 font-semi-bold text-gray-600 md:text-[24px]">
                     {top.Email}
-                  </h3>
+                  </h6>
                 </div>
 
-                <h3 className="xs:text-lg font-medium pl-2 pt-3 font-semi-bold text-gray-600 lg:text-[30px]">{top.Attendees}</h3>
+                <h6 className="text-base font-medium ml-12 mt-3 font-semi-bold text-gray-600 md:text-[24px]">{top.Attendees}</h6>
               </div>
             );
           })}
