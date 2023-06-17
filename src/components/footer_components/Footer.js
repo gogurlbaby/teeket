@@ -9,7 +9,6 @@ import vector2 from "../../assets/discoverpage_images/vectt.svg";
 import chatDot from "../../assets/discoverpage_images/ChatDots.svg";
 
 function Footer() {
-
   //drop down functionality
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const toggleDrop = () => {
@@ -96,13 +95,15 @@ function Footer() {
           </button>
         </div>
 
-        <div className="mx-[1rem] md:mx-[4rem]">
+        <div className="mx-[1.5rem] md:mx-[4rem]">
           <div>
-            <div className="mt-[1rem]">
-              <span className="text-[#989898] text-[12px] font-medium">MENU</span>
+            <div className="mt-[1.8rem] lg:mt-[2.5rem]">
+              <span className="text-[#989898] text-[12px] font-medium">
+                MENU
+              </span>
             </div>
 
-            <div className="flex  mt-[1.2rem] mb-[.7rem]">
+            <div className="flex  mt-[1rem] mb-[.7rem]">
               <h3 className="font-semibold text-[14px] text-[#FFFFFF]">
                 For Organizers
               </h3>
@@ -132,7 +133,7 @@ function Footer() {
             )}
           </div>
 
-          <div className=" w-full bg-[#585858c0] h-[.2px] mt-[2.5rem] text-center"></div>
+          <div className=" w-full bg-[#585858c0] h-[.2px] mt-[2rem] text-center"></div>
 
           <div className="mt-[2rem]">
             <div className="flex">
@@ -150,11 +151,13 @@ function Footer() {
             </div>
           </div>
 
-          <div className=" w-full bg-[#585858c1] h-[.2px] mt-[3.5rem] text-center"></div>
+          <div className=" w-full bg-[#585858c1] h-[.2px] mt-[2rem] text-center"></div>
 
-          <div className="flex mt-[1.6rem]">
-            <p className="text-[#FFFFFF] text-[14px] font-normal">Privacy Policy</p>
-            <p className="text-[#FFFFFF] text-[14px] font-normal ml-[6rem]">
+          <div className="flex mt-[1.6rem] lg:justify-between">
+            <p className="text-[#FFFFFF] text-[14px] font-normal">
+              Privacy Policy
+            </p>
+            <p className="text-[#FFFFFF] text-[14px] font-normal ml-[6rem] ">
               Terms of Use
             </p>
           </div>
