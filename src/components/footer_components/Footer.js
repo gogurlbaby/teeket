@@ -136,7 +136,7 @@ function Footer() {
                 </p>
                 <p className="text-[14px] font-light ">
                   <a href="/graph" className="no-underline text-[#D2D2D2]">
-                    For Event Managers.
+                    Event Managers.
                   </a>
                 </p>
               </div>
