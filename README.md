@@ -6,7 +6,7 @@ This application was designed as the capstone project for cohort 6 web developme
 Teeket application  is a  web application developed for event management. It provides a platform for users to create, manage, and promote their events conveniently. Users can create an event, discover existing events, and perform various actions related to event management.
 
 # Installation
-1. Clone the repository: git clone <https://github.com/gogurlbaby/teeket/>
+1. Clone the repository: git clone <[https://github.com/RhodAyo/Teeket.git](https://github.com/RhodAyo/Teeket.git)>
 2. Navigate to the project directory: cd teeket
 3. Install the dependencies: npm install
 
@@ -41,13 +41,13 @@ Teeket application  is a  web application developed for event management. It pro
 ![teeket5](https://github.com/gogurlbaby/teeket/assets/78927972/c55b7b0a-e87a-4bcc-8ed6-98be33a97cb7)
 
 # Acknowledgements
-I deeply appreciate my team members: Ayomide Oluwole, Oghenerukevwe Ayoko and Latifat Suleiman 
+I deeply appreciate my team members: Philia Hammond, Oghenerukevwe Ayoko and Latifat Suleiman 
 for putting in earnest efforts to make this app a success.
 
 # Contact
-For any inquiries or support, please contact Philia Hammond.
+For any inquiries or support, please contact Ayomide Oluwole.
 
 
 ### Deployment
 
-Deployed link: [https://philly-teeket.netlify.app/]
+Deployed link: [https://ayo-teeket.netlify.app/](https://ayo-teeket.netlify.app/)
