@@ -15,7 +15,7 @@ Teeket application  is a  web application developed for event management. It pro
 2. Open your browser and go to http://localhost:3000 to access the landing page.
 3. Use the navigation buttons to create an event or discover existing events.
 
-#Technologies Used
+# Technologies Used
 1. React
 2. React Router
 3. Tailwind
@@ -26,11 +26,11 @@ Teeket application  is a  web application developed for event management. It pro
 8. Yup
 
 # Features
-Login : Authentication of user
-Create Events: Users can create events
-Book Events: Users can book events
-Discover Events: Users can view trending and discover events
-Analytics of Events : Users can view analytics of events
+1. Login : Authentication of user
+2. Create Events: Users can create events
+3. Book Events: Users can book events
+4. Discover Events: Users can view trending and discover events
+5. Analytics of Events : Users can view analytics of events
 
 # Screenshots
 ![teeket](https://github.com/gogurlbaby/teeket/assets/78927972/2e40a561-1693-4f4e-914a-f492e02607eb)
