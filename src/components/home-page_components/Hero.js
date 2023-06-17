@@ -10,7 +10,7 @@ function Hero() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat"
       }}
-      className="lg:py-[5.5rem] lg:h-[30rem] md:py-[15rem] md:rounded-b-[80px] w-full rounded-b-[50px] py-[4rem] mt-4"
+      className="lg:py-[5.5rem] lg:h-[30rem] md:rounded-b-[80px] w-full rounded-b-[50px] py-[4rem] mt-4"
     >
       <div className="text-white pt-10">
         <div className="md:text-center text-white px-10">
@@ -27,11 +27,11 @@ function Hero() {
         <button
           type="submit"
           className="
-          md:text-[18px] 
-          md:mt-[3rem] 
+          lg:text-[18px] 
+          lg:mt-[3rem] 
           
-          md:px-[10rem] 
-          md:rounded-2xl
+          lg:px-[10rem] 
+          lg:rounded-2xl
           flex 
           justify-center 
           items-center 

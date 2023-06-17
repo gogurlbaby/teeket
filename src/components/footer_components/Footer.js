@@ -7,8 +7,11 @@ import image5 from "../../assets/discoverpage_images/Rectangle 1708.png";
 import vector1 from "../../assets/discoverpage_images/vect.png";
 import vector2 from "../../assets/discoverpage_images/vectt.svg";
 import chatDot from "../../assets/discoverpage_images/ChatDots.svg";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  
+  const navigate = useNavigate()
   //drop down functionality
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const toggleDrop = () => {
@@ -22,7 +25,7 @@ function Footer() {
       mt-[2rem] pt-[3rem]"
       >
         <div
-          className="md:w-[700px] md:flex md:flex-col md:justify-center md:items-center pl-[.5rem] w-[343px]
+          className="lg:w-[700px] lg:flex lg:flex-col lg:justify-center lg:items-center pl-[.5rem] w-[343px]
       pt-[1.7rem] text-center mx-auto pb-[1.875rem]
       rounded-[1rem] "
           style={{
@@ -89,13 +92,14 @@ function Footer() {
 
           <button
             type="button"
-            className=" md:px-[6rem] md:py-[1.2rem] md:text-[16px] px-[3rem] py-[1rem] rounded-[1rem] mt-[1.7rem] text-[#0052F6] text-center font-bold text-[12px] bg-[#FFFFFF]"
+            onClick={() => {navigate("/trending-events")}}
+            className=" lg:px-[6rem] lg:py-[1.2rem] lg:text-[16px] px-[3rem] py-[1rem] rounded-[1rem] mt-[1.7rem] text-[#0052F6] text-center font-bold text-[12px] bg-[#FFFFFF]"
           >
             Book an event
           </button>
         </div>
 
-        <div className="mx-[1.5rem] md:mx-[4rem]">
+        <div className="lg:mx-[4rem] ml-[2.5rem] ">
           <div>
             <div className="mt-[1.8rem] lg:mt-[2.5rem]">
               <span className="text-[#989898] text-[12px] font-medium">
@@ -138,14 +142,14 @@ function Footer() {
           <div className="mt-[2rem]">
             <div className="flex">
               <img src={vector2} alt="vector" />
-              <p className="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem] mt-[.7rem]">
+              <p className="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem]">
                 09136605062
               </p>
             </div>
 
-            <div className="flex mt-[.6rem]">
+            <div className="flex mt-[1rem]">
               <img src={chatDot} alt="chatIcon " />
-              <p className="text-[#FFFFFF] text-[12px] font-light ml-[.7rem] mt-[.5rem]">
+              <p className="text-[#FFFFFF] text-[12px] font-light ml-[.7rem]">
                 Teeket@support.com
               </p>
             </div>
