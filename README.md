@@ -2,7 +2,8 @@
 Teeket App
 
 # Description
-This is a web application for event management. It provides a platform for users to create, manage, and promote their events conveniently. Users can create an event, discover existing events, and perform various actions related to event management.
+This application was designed as the capstone project for cohort 6 team 2 web development pro track managed by the Hertechtrail team. 
+Teeket application  is a  web application developed for event management. It provides a platform for users to create, manage, and promote their events conveniently. Users can create an event, discover existing events, and perform various actions related to event management.
 
 # Installation
 1. Clone the repository: git clone <https://github.com/gogurlbaby/teeket/>
@@ -10,23 +11,26 @@ This is a web application for event management. It provides a platform for users
 3. Install the dependencies: npm install
 
 # Usage
-Start the application: npm start
-Open your browser and go to http://localhost:3000 to access the landing page.
-Use the navigation buttons to create an event or discover existing events.
-Technologies Used
-React
-React Router
-Tailwind
-React Bootstrap
-Firebase
-React Hook Form
-React Toastify
-Yup
+1. Start the application: npm start
+2. Open your browser and go to http://localhost:3000 to access the landing page.
+3. Use the navigation buttons to create an event or discover existing events.
+
+#Technologies Used
+1. React
+2. React Router
+3. Tailwind
+4. React Bootstrap
+5. Firebase
+6. React Hook Form
+7. React Toastify
+8. Yup
 
 # Features
-Feature 1: Description of feature 1.
-Feature 2: Description of feature 2.
-...
+Login : Authentication of user
+Create Events: Users can create events
+Book Events: Users can book events
+Discover Events: Users can view trending and discover events
+Analytics of Events : Users can view analytics of events
 
 # Screenshots
 ![teeket](https://github.com/gogurlbaby/teeket/assets/78927972/2e40a561-1693-4f4e-914a-f492e02607eb)
