@@ -117,7 +117,7 @@ function Events() {
                 </div>
               </div>
 
-              <div className="w-[45%]">
+              <div className="w-[45%] md:w-[10%]">
                 <img src={item.image} alt="icon" />
               </div>
             </div>

@@ -7,7 +7,7 @@ export let attendanceArray = [
     title: `Future of Web3 Conference'`,
     price: "$8.00",
     image: "/images/event1.png",
-    mapline: "/images/MapPinLine.png",
+    mapline: "/images/MapPinLine.svg",
     icon: "/images/userorganizer1.png",
   },
 
@@ -19,7 +19,7 @@ export let attendanceArray = [
     title: "Kuramo- All White Beach",
     price: "FREE",
     image: "/images/event2.png",
-    mapline: "/images/MapPinLine.png",
+    mapline: "/images/MapPinLine.svg",
     icon: "/images/userorganizer3.png",
   },
 
@@ -31,7 +31,7 @@ export let attendanceArray = [
     title: "Women and Tech Careers",
     price: "FREE",
     image: "/images/event3.png",
-    mapline: "/images/MapPinLine.png",
+    mapline: "/images/MapPinLine.svg",
     icon: "/images/userorganizer2.png",
   },
 ];
@@ -45,9 +45,9 @@ export let remainEvents = [
     date: "03 JUNE",
     title: "Goalfest 2023",
     price: "$10.00",
-    image: "/images/event_image2.png",
-    mapline: "/images/MapPinLine.png",
-    icon: "/images/eventcreator_3.png",
+    image: "/images/event_image2.svg",
+    mapline: "/images/MapPinLine.svg",
+    icon: "/images/eventcreator_3.svg",
   },
   {
     id: 1,
@@ -55,9 +55,9 @@ export let remainEvents = [
     location: "Lagos",
     date: "13 JUNE",
     title: "Painting Trainings",
-    image: "/images/event_image3.png",
+    image: "/images/event_image3.svg",
     price: "FREE",
-    mapline: "/images/MapPinLine.png",
-    icon: "/images/eventcreator_3.png",
+    mapline: "/images/MapPinLine.svg",
+    icon: "/images/eventcreator_3.svg",
   },
 ];
