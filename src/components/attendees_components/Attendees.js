@@ -9,6 +9,7 @@ import sponsor_three from "../../assets/attendees_image/sponsor3.png";
 import sponsor_four from "../../assets/attendees_image/sponsor4.png";
 import sponsor_five from "../../assets/attendees_image/sponsor5.png";
 import sponsor_six from "../../assets/attendees_image/sponsor6.png";
+import signedusers from "../../assets/attendees_image/signedusers.png";
 
 function Attendees() {
   //Button functionality
@@ -40,7 +41,7 @@ function Attendees() {
     <>
       <div className="overflow-hidden md:flex md:flex-col md:justify-center md:items-center">
         <main className="pl-[1rem]  overflow-hidden">
-          <h1 className="mt-[1.5rem] mb-[1rem] font-bold overflow-hidden text-4xl">
+          <h1 className="mt-[1.5rem] mb-[1rem] font-bold overflow-hidden text-4xl md: text-4xl font-bold  text-center">
             Book your Events with{" "}
             <span style={{ color: "#0765f8" }}>Teeket</span>
           </h1>
@@ -50,7 +51,12 @@ function Attendees() {
               at your convenience.
             </p>
           </div>
-
+          <div className="flex  justify-center ">
+            <img src={signedusers} className="" alt="signedusers" />
+            <p className="font-light text-lg ml-[15px] mt-[10px]">
+              + 2,000 Members
+            </p>
+          </div>
           <h2 className="text-[24px] font-bold mt-[1.5rem] md:flex md:flex-col md:justify-center md:items-center">
             Trending Event
           </h2>

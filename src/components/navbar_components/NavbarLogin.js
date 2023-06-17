@@ -13,10 +13,13 @@ function NavbarLogin() {
     <>
       <Navbar
         expand="md"
+        className="h-[100px] w-full flex justify-between pt-[1.5rem] px-[1rem] shadow-lg "
       >
         <Container fluid>
           <Navbar.Brand>
-            <img src={logo} alt="teeket-logo" />
+            <a href="/">
+              <img src={logo} alt="teeket-logo" />
+            </a>
           </Navbar.Brand>
           <button
             type="button"
@@ -32,19 +35,21 @@ function NavbarLogin() {
             responsive="lg"
             id="responsive-navbar-nav"
             placement="end"
-            style={{ width: "50%" }}
+            style={{ width: "60%" }}
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title> </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-              <ul>
-                  <li><a href="/">Teeket</a></li>
-                  <li><a href="/home">Home</a></li>
-                  <li><a href="/discover-events">Discover Events</a></li>
-                  <li><a href="/trending-events">Book Events</a></li>
-              </ul>
+                <ul>
+                  <li>
+                    <a href="/">Teeket</a>
+                  </li>
+                  <li>
+                    <a href="/home">Home</a>
+                  </li>
+                </ul>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

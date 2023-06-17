@@ -16,10 +16,14 @@ import * as yup from "yup";
 
 function Login() {
   const loginValidate = yup.object({
-    email: yup.string().email("Invalid email").required("Your email is required"),
-    password: yup.string()
+    email: yup
+      .string()
+      .email("Invalid email")
+      .required("Your email is required"),
+    password: yup
+      .string()
       .required("Password is required")
-      .min(3, "Must be at least 3 characters long")
+      .min(3, "Must be at least 3 characters long"),
   });
 
   const navigate = useNavigate();
@@ -29,26 +33,30 @@ function Login() {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
   } = useForm({
     defaultValues: {
       email: "",
-      password: ""
+      password: "",
     },
-    resolver: yupResolver(loginValidate)
+    resolver: yupResolver(loginValidate),
   });
 
   const onChange = (e) => {
     setFormInput((prevState) => ({
       ...prevState,
-      [e.target.id]: e.target.value
+      [e.target.id]: e.target.value,
     }));
   };
 
   const onSubmit = async () => {
     try {
       const auth = getAuth();
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
       const user = userCredential.user;
       const formDataCopy = { ...formInput };
       delete formDataCopy.password;
@@ -75,11 +83,11 @@ function Login() {
         await setDoc(doc(firebaseSetup, "users", user.uid), {
           name: user.displayName,
           email: user.email,
-          timestamp: serverTimestamp()
+          timestamp: serverTimestamp(),
         });
       }
       navigate("/home");
-      toast.success("Successful Login!",{
+      toast.success("Successful Login!", {
         position: "top-center",
         theme: "light",
       });
@@ -91,7 +99,9 @@ function Login() {
   return (
     <div className="flex items-center justify-center flex-col overflow-auto mt-6">
       <div>
-        <h3 className="text-2xl font-semibold">Log in or sign up to continue</h3>
+        <h3 className="text-2xl font-semibold">
+          Log in or sign up to continue
+        </h3>
       </div>
       {/* option 1 for Google sign-in */}
       <div className="py-6">
@@ -126,7 +136,11 @@ function Login() {
             {...register("email")}
             onChange={onChange}
           />
-          {<p style={{ color: "red", fontSize: "16px" }}>{errors.email?.message}</p>}
+          {
+            <p style={{ color: "red", fontSize: "16px" }}>
+              {errors.email?.message}
+            </p>
+          }
         </section>
         <section>
           <input
@@ -141,7 +155,11 @@ function Login() {
             minLength="8"
             autoComplete="on"
           />
-         {<p style={{ color: "red", fontSize: "16px" }}>{errors.email?.message}</p>}
+          {
+            <p style={{ color: "red", fontSize: "16px" }}>
+              {errors.email?.message}
+            </p>
+          }
         </section>
         <button
           type="submit"

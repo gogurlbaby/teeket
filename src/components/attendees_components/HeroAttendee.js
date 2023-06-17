@@ -10,7 +10,7 @@ function HeroAttendee() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      class=" rounded-b-[35px] py-[11rem] mt-4 "
+      class=" rounded-b-[35px] py-[11rem] mt-4 md:py-[13rem]"
     ></div>
   );
 }

@@ -11,11 +11,12 @@ function NavBar() {
 
   return (
     <>
-      <Navbar
-      expand="md">
+      <Navbar expand="md">
         <Container fluid>
           <Navbar.Brand>
-            <img src={logo} alt="teeket-logo"/>
+            <a href="/">
+              <img src={logo} alt="teeket-logo" />
+            </a>
           </Navbar.Brand>
           <button
             type="button"
@@ -31,7 +32,7 @@ function NavBar() {
             responsive="lg"
             id="responsive-navbar-nav"
             placement="end"
-            style={{ width: "50%" }}
+            style={{ width: "60%" }}
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title> </Offcanvas.Title>
@@ -39,10 +40,18 @@ function NavBar() {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3 mr-[1rem]">
                 <ul>
-                  <li><a href="/">Teeket</a></li>
-                  <li><a href="/home">Home</a></li>
-                  <li><a href="/discover-events">Discover Events</a></li>
-                  <li><a href="/trending-events">Book Events</a></li>
+                  <li>
+                    <a href="/">Teeket</a>
+                  </li>
+                  <li>
+                    <a href="/home">Home</a>
+                  </li>
+                  <li>
+                    <a href="/discover-events">Discover Events</a>
+                  </li>
+                  <li>
+                    <a href="/trending-events">Book Events</a>
+                  </li>
                 </ul>
               </Nav>
             </Offcanvas.Body>

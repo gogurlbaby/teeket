@@ -9,7 +9,6 @@ import vector2 from "../../assets/discoverpage_images/vectt.svg";
 import chatDot from "../../assets/discoverpage_images/ChatDots.svg";
 
 function Footer() {
-
   //drop down functionality
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const toggleDrop = () => {
@@ -99,7 +98,9 @@ function Footer() {
         <div className="mx-[1rem] md:mx-[4rem]">
           <div>
             <div className="mt-[1rem]">
-              <span className="text-[#989898] text-[12px] font-medium">MENU</span>
+              <span className="text-[#989898] text-[12px] font-medium">
+                MENU
+              </span>
             </div>
 
             <div className="flex  mt-[1.2rem] mb-[.7rem]">
@@ -137,14 +138,14 @@ function Footer() {
           <div className="mt-[2rem]">
             <div className="flex">
               <img src={vector2} alt="vector" />
-              <p className="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem]">
+              <p className="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem] mt-[.7rem]">
                 09136605062
               </p>
             </div>
 
-            <div className="flex mt-[1rem]">
+            <div className="flex mt-[.6rem]">
               <img src={chatDot} alt="chatIcon " />
-              <p className="text-[#FFFFFF] text-[12px] font-light ml-[.7rem]">
+              <p className="text-[#FFFFFF] text-[12px] font-light ml-[.7rem] mt-[.5rem]">
                 Teeket@support.com
               </p>
             </div>
@@ -153,7 +154,9 @@ function Footer() {
           <div className=" w-full bg-[#585858c1] h-[.2px] mt-[3.5rem] text-center"></div>
 
           <div className="flex mt-[1.6rem]">
-            <p className="text-[#FFFFFF] text-[14px] font-normal">Privacy Policy</p>
+            <p className="text-[#FFFFFF] text-[14px] font-normal">
+              Privacy Policy
+            </p>
             <p className="text-[#FFFFFF] text-[14px] font-normal ml-[6rem]">
               Terms of Use
             </p>
