@@ -10,8 +10,7 @@ import chatDot from "../../assets/discoverpage_images/ChatDots.svg";
 import { useNavigate } from "react-router-dom";
 
 function Footer() {
-  
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   //drop down functionality
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const toggleDrop = () => {
@@ -21,7 +20,7 @@ function Footer() {
   return (
     <div classNameName="overflow-hidden">
       <main
-        className="w-full h-[835px] bg-[#110011]
+        className="w-full h-[1000px] bg-[#110011]
       mt-[2rem] pt-[3rem]"
       >
         <div
@@ -92,7 +91,9 @@ function Footer() {
 
           <button
             type="button"
-            onClick={() => {navigate("/trending-events")}}
+            onClick={() => {
+              navigate("/trending-events");
+            }}
             className=" lg:px-[6rem] lg:py-[1.2rem] lg:text-[16px] px-[3rem] py-[1rem] rounded-[1rem] mt-[1.7rem] text-[#0052F6] text-center font-bold text-[12px] bg-[#FFFFFF]"
           >
             Book an event
@@ -127,7 +128,7 @@ function Footer() {
                 <p className="text-[#D2D2D2] mb-[.7rem] text-[14px] font-light">
                   How to create events
                 </p>
-                <p className="text-[#D2D2D2] text-[14px] mt-[.7rem] mb-[.6rem] font-lightl">
+                <p className="text-[#D2D2D2] text-[14px] mt-[.7rem] mb-[.6rem] font-light">
                   Event FAQs.
                 </p>
                 <p className="text-[#D2D2D2] text-[14px] font-light ">
@@ -135,7 +136,7 @@ function Footer() {
                 </p>
                 <p className="text-[14px] font-light ">
                   <a href="/graph" className="no-underline text-[#D2D2D2]">
-                  For Event Managers.
+                    For Event Managers.
                   </a>
                 </p>
               </div>
@@ -175,7 +176,7 @@ function Footer() {
             <p className="font-extralight text-[12px] text-[#ffffff83]">
               @TeeketInc Allrights reserved.
             </p>
-            <p className="font-extralight text-[11.7px] text-[#ffffff83] text-center mt-[1.4rem]">
+            <p className="font-extralight text-[11.7px] text-[#ffffff83] text-center mt-[1.8rem]">
               HerTechTrail Capstone project, designed by GROUP 2
             </p>
           </div>
