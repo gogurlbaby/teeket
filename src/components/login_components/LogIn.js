@@ -64,7 +64,10 @@ function Login() {
 
       await setDoc(doc(firebaseSetup, "users", user.uid), forlgataCopy);
       navigate("/home");
-      toast.success("Successful Login!");
+      toast.success("Successful Login!", {
+        position: "top-center",
+        theme: "light",
+      });
     } catch (error) {
       toast.error("Oops...Try again!");
     }
