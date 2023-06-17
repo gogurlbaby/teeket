@@ -8,7 +8,8 @@ import { remainEvents } from "../Eventdata";
 
 function Events() {
   //Button functionality
-  const [/*displayedObjects,*/ setDisplayedObjects] = useState([]);
+  // eslint-disable-next-line no-unused-vars
+  const [displayedObjects, setDisplayedObjects] = useState([]);
   const [showHiddenObjects, setShowHiddenObjects] = useState(false);
   const handleButtonClick = () => {
     setShowHiddenObjects(true);
@@ -30,7 +31,7 @@ function Events() {
   };
 
   return (
-    <div className="md:flex md:justify-center md:items-center">
+    <div className="md:flex md:justify-center md:items-center overflow-hidden">
       <main className="pl-[2rem] pr-[2rem] w-full ">
         <h1 className="mt-[3rem] mb-[1rem] text-[24px] font-medium">
           Discover events near you
@@ -38,7 +39,8 @@ function Events() {
         <div className="flex mb-[1rem] justify-between text-center ">
           <form>
             <input
-              className="bg-[#827f7f30] border-none w-[279px] h-[48px] rounded-[.6rem]
+              className="md: bg-[#827f7f30] border-none w-[220px] h-[48px] rounded-[.6rem]
+               lg:w-[50rem] md: bg-[#827f7f30] border-none w-[279px] h-[48px] rounded-[.6rem]
                lg:w-[50rem]"
               type="text"
               placeholder="Search all events"
@@ -47,7 +49,7 @@ function Events() {
               onChange={handleSearch}
             />
           </form>
-          <div className="w-[35%] pl-[2rem]">
+          <div className="w-[35%] pl-[2rem] md:w-[35%] pl-[2rem]">
             {<img src={filterImage} alt="icon" />}
           </div>
         </div>
@@ -64,11 +66,11 @@ function Events() {
           </div>
 
           <div className="flex justify-between">
-            <div className="w-[43%] h-[84px]     lg:h-[100px]  lg:pl-[3rem] lg:pt-[1rem]      bg-[#B0E298] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
+            <div className="w-[43%] h-[95px]     lg:h-[100px]  lg:pl-[3rem] lg:pt-[1rem]      bg-[#B0E298] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
               <img src={music} alt="music-icon" />
               <p>Arts and Culture </p>
             </div>
-            <div className="h-[84px] w-[43%]      lg:h-[100px]  lg:pl-[3rem] lg:pt-[1rem]     bg-[#FFC971] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
+            <div className="h-[95px] w-[43%]      lg:h-[100px]  lg:pl-[3rem] lg:pt-[1rem]     bg-[#FFC971] rounded-[0.6rem] pl-[1rem] pt-[1rem]">
               <img src={music} alt="music-icon" />
               <p>Business</p>
             </div>
@@ -80,12 +82,16 @@ function Events() {
         {newSerch.map(function (item) {
           return (
             <div
-              className="w-[349px] lg:w-[90%] h-[172px] flex justify-between 
+              className="
+               w-[325px] h-[172px] flex justify-between pl-[0.6rem] pt-[1rem] 
+                border-2 mt-[1.5rem] border-[#4d4d4d10] -ml-[0.6px] shadow-sm pb-[1rem] 
+                rounded-[.5rem] pl-[10px]
+                md:w-[349px] lg:w-[90%] h-[172px] flex justify-between 
                 border-2 mt-[1.4rem]  border-[#4d4d4d10]   shadow-sm  px-[.6rem] py-[.6rem]
-                rounded-[.5rem]  mx-auto "
+                rounded-[.5rem]  mx-auto"
               key={item.id}
             >
-              <div className="w-[50%] py-[.7rem] ">
+              <div className="w-[55%] py-[.5rem] ">
                 <div className="flex ">
                   <span className="text-[12px] font-medium w-[58px] text-[#989898] text-center ">
                     {item.date}
@@ -105,7 +111,7 @@ function Events() {
                 <div className="flex w-[90%] mt-[.6rem] ">
                   <img src={item.icon} alt="icon" />
 
-                  <p className="text-[14px] w-[20rem]  ml-[.7rem] lg:text-[16px]">
+                  <p className="text-[14px] w-[20rem]  mt-[0.8rem] ml-[.7rem] lg:text-[16px]">
                     {item.name}
                   </p>
                 </div>
@@ -127,7 +133,7 @@ function Events() {
           <button
             type="button"
             onClick={handleButtonClick}
-            className=" w-[343px] bg-[#E1E4EB] text-center rounded-xl h-[60px] mt-[1rem] lg:w-[90%]"
+            className="w-[270px] bg-[#E1E4EB] text-center rounded-xl h-[60px] mt-[1rem] lg:w-[90%] md: w-[343px] bg-[#E1E4EB] text-center rounded-xl h-[60px] mt-[1rem] lg:w-[90%]"
           >
             Discover more
           </button>
@@ -140,7 +146,9 @@ function Events() {
                   {item.heading}
                 </h2>
                 <div
-                  className="w-[349px] lg:w-[90%] mx-auto h-[172px] flex justify-between pl-[1rem] pt-[1rem] 
+                  className="w-[325px] h-[172px] flex justify-between pl-[0.6rem] pt-[1rem] 
+                border-2 mt-[1.5rem] border-[#4d4d4d10] -ml-[0.6px] shadow-sm pb-[1rem] 
+                rounded-[.5rem] pl-[10px] md:w-[349px] lg:w-[90%] mx-auto h-[172px] flex justify-between pl-[1rem] pt-[1rem] 
                 border-2 mt-[1.5rem] border-[#4d4d4d10]  pr-[1rem] shadow-sm pb-[1rem] 
                 rounded-[.5rem]"
                   key={item.id}
@@ -164,14 +172,16 @@ function Events() {
 
                     <div className="flex w-[90%] mt-[.6rem]">
                       <img src={item.icon} alt="icon" />
-                      <p className="text-[12px] w-[20rem] lg:text-[14px]  ml-[.4rem] ">
+                      <p className="text-[12px]  mt-[0.8rem] w-[20rem] lg:text-[14px]  ml-[.4rem] ">
                         {item.name}
                       </p>
                     </div>
 
-                    <div className="flex mt-[1rem]">
+                    <div className="flex mt-[0.5rem]">
                       <img src={item.mapline} alt="mapline" />
-                      <span class="text-[12px]">{item.location}</span>
+                      <span class="text-[12px]  ml-[.2rem]">
+                        {item.location}
+                      </span>
                     </div>
                   </div>
 

@@ -138,14 +138,14 @@ function Footer() {
           <div className="mt-[2rem]">
             <div className="flex">
               <img src={vector2} alt="vector" />
-              <p className="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem]">
+              <p className="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem] mt-[.7rem]">
                 09136605062
               </p>
             </div>
 
-            <div className="flex mt-[1rem]">
+            <div className="flex mt-[.6rem]">
               <img src={chatDot} alt="chatIcon " />
-              <p className="text-[#FFFFFF] text-[12px] font-light ml-[.7rem]">
+              <p className="text-[#FFFFFF] text-[12px] font-light ml-[.7rem] mt-[.5rem]">
                 Teeket@support.com
               </p>
             </div>
