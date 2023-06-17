@@ -79,7 +79,10 @@ function Login() {
         });
       }
       navigate("/home");
-      toast.success("Successful Login!");
+      toast.success("Successful Login!",{
+        position: "top-center",
+        theme: "light",
+      });
     } catch (error) {
       toast.error("Oops...Try again!");
     }
@@ -94,7 +97,7 @@ function Login() {
       <div className="py-6">
         <button
           type="button"
-          className="bg-[#FFFFFF] py-2 px-16 text-[#1F1F1F] text-base font-bold flex flex-row rounded-lg border border-grey-500"
+          className="lg:w-[50rem] md:w-[40rem] md:flex md:justify-center md:items-center bg-[#FFFFFF] py-3 px-16 text-[#1F1F1F] text-base font-bold flex flex-row rounded-xl border border-grey-500"
           onClick={onGoogleClick}
         >
           <img src={google} alt="google-logo" className="px-3" />

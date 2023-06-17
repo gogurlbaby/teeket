@@ -22,7 +22,7 @@ function App() {
           <Route path="/trending-events" element={<AttendeesEvent />} />
         </Routes>
       </BrowserRouter>
-       <ToastContainer />
+       <ToastContainer/>
     </>
   );
 }
