@@ -46,9 +46,6 @@ function NavbarLogin() {
                   <li>
                     <a href="/">Teeket</a>
                   </li>
-                  <li>
-                    <a href="/home">Home</a>
-                  </li>
                 </ul>
               </Nav>
             </Offcanvas.Body>
