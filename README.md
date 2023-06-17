@@ -2,7 +2,7 @@
 Teeket App
 
 # Description
-This application was designed as the capstone project for cohort 6 team 2 web development pro track managed by the Hertechtrail team. 
+This application was designed as the capstone project for cohort 6 by team 2 web development pro track managed by the Hertechtrail team. 
 Teeket application  is a  web application developed for event management. It provides a platform for users to create, manage, and promote their events conveniently. Users can create an event, discover existing events, and perform various actions related to event management.
 
 # Installation
