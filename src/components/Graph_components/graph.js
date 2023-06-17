@@ -7,8 +7,11 @@ import daniel2 from "../../assets/graph_images/daniel3.svg";
 import Dropdown from "react-bootstrap/Dropdown";
 import NavBar from "../navbar_components/Navbar";
 import vector from "../../assets/graph_images/Vector.svg";
+import { useNavigate } from "react-router-dom";
 
 function Graph() {
+
+  const navigate = useNavigate()
   
   let Tops = [
     {
@@ -36,7 +39,9 @@ function Graph() {
       <div className=" justify-center align-center md:p-[1.5rem]">
         <div className="flex p-4">
           <img src={vector} alt="frame" className="relative top-1"/>
-            <button className="pl-4 pt-1 text-base font-semi-bold no-underline md:text-[18px] ">
+            <button 
+            onClick={() => {navigate("/home")}}
+            className="pl-4 pt-1 text-base font-semi-bold no-underline md:text-[18px] ">
             Go Back
             </button>
         </div>
