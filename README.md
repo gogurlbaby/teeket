@@ -50,4 +50,4 @@ For any inquiries or support, please contact Ayomide Oluwole.
 
 ### Deployment
 
-Deployed link: [(https://ayo-teeket.netlify.app/)https://ayo-teeket.netlify.app/]
+Deployed link: [https://ayo-teeket.netlify.app/](https://ayo-teeket.netlify.app/)
