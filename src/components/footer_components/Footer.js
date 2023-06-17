@@ -127,7 +127,7 @@ function Footer() {
                 <p className="text-[#D2D2D2] mb-[.7rem] text-[14px] font-light">
                   How to create events
                 </p>
-                <p className="text-[#D2D2D2] text-[14px] mt-[.7rem] mb-[.6rem] font-lightl">
+                <p className="text-[#D2D2D2] text-[14px] mt-[.7rem] mb-[.6rem] font-light">
                   Event FAQs.
                 </p>
                 <p className="text-[#D2D2D2] text-[14px] font-light ">
@@ -135,7 +135,7 @@ function Footer() {
                 </p>
                 <p className="text-[14px] font-light ">
                   <a href="/graph" className="no-underline text-[#D2D2D2]">
-                  For Event Managers.
+                  Event Managers.
                   </a>
                 </p>
               </div>
