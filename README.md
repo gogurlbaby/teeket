@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Project Name
+Teeket App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Description
+This is a web application for event management. It provides a platform for users to create, manage, and promote their events conveniently. Users can create an event, discover existing events, and perform various actions related to event management.
 
-## Available Scripts
+# Installation
+1. Clone the repository: git clone <https://github.com/gogurlbaby/teeket/>
+2. Navigate to the project directory: cd teeket
+3. Install the dependencies: npm install
 
-In the project directory, you can run:
+# Usage
+Start the application: npm start
+Open your browser and go to http://localhost:3000 to access the landing page.
+Use the navigation buttons to create an event or discover existing events.
+Technologies Used
+React
+React Router
+Tailwind
+React Bootstrap
+Firebase
+React Hook Form
+React Toastify
+Yup
 
-### `npm start`
+# Features
+Feature 1: Description of feature 1.
+Feature 2: Description of feature 2.
+...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Screenshots
+![teeket](https://github.com/gogurlbaby/teeket/assets/78927972/2e40a561-1693-4f4e-914a-f492e02607eb)
+![teeket1](https://github.com/gogurlbaby/teeket/assets/78927972/c21ecb70-be6d-4463-b74d-1890f1b8bc66)
+![teeket2](https://github.com/gogurlbaby/teeket/assets/78927972/80cb5821-4410-44c0-ae59-78a4fad9c803)
+![teeket3](https://github.com/gogurlbaby/teeket/assets/78927972/4feebeba-3a38-48eb-9cce-6fae20623c26)
+![teeket4](https://github.com/gogurlbaby/teeket/assets/78927972/055bcd0c-be84-4623-a44d-1888c0905df9)
+![teeket5](https://github.com/gogurlbaby/teeket/assets/78927972/c55b7b0a-e87a-4bcc-8ed6-98be33a97cb7)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Acknowledgements
+I deeply appreciate my team members: Ayomide Oluwole, Oghenerukevwe Ayoko and Latifat Suleiman 
+for putting in earnest efforts to make this app a success.
 
-### `npm test`
+# Contact
+For any inquiries or support, please contact Philia Hammond.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deployed link: [https://philly-teeket.netlify.app/]
