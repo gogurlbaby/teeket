@@ -21,7 +21,7 @@ function Footer() {
   return (
     <div classNameName="overflow-hidden">
       <main
-        className="w-full h-[835px] bg-[#110011]
+        className="w-full bg-[#110011]
       mt-[2rem] pt-[3rem]"
       >
         <div
