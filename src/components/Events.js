@@ -39,7 +39,7 @@ function Events() {
         <div className="flex mb-[1rem] justify-between text-center ">
           <form>
             <input
-              className="bg-[#827f7f30] border-none w-[279px] h-[48px] rounded-[.6rem]
+              className="bg-[#827f7f30] border-none w-[270px] h-[48px] rounded-[.6rem]
                lg:w-[50rem]"
               type="text"
               placeholder="Search all events"
@@ -48,7 +48,7 @@ function Events() {
               onChange={handleSearch}
             />
           </form>
-          <div className="w-[35%] pl-[2rem]">
+          <div className="w-[43%] pl-[2rem]">
             {<img src={filterImage} alt="icon" />}
           </div>
         </div>
@@ -99,7 +99,7 @@ function Events() {
                   </span>
                 </div>
 
-                <h3 className="w-[110%] mt-2 text-[16px] text-[black] font-bold lg:text-[18px]">
+                <h3 className="w-[115%] mt-2 text-[16px] text-[black] font-bold lg:text-[18px]">
                   {item.title}
                 </h3>
 
@@ -176,7 +176,7 @@ function Events() {
                     </div>
                   </div>
 
-                  <div className="w-[45%]  pl-[2rem]">
+                  <div className="w-[45%] md:w-[10%]">
                     <img src={item.image} alt="icon" />
                   </div>
                 </div>

@@ -39,8 +39,8 @@ function Attendees() {
 
   return (
     <>
-      <div className="overflow-hidden md:flex md:flex-col md:justify-center md:items-center">
-        <main className="pl-[1rem]  overflow-hidden">
+      <div className="overflow-hidden md:flex md:flex-col md:justify-center md:items-center ">
+        <main className="pl-[1rem]">
           <h1 className="mt-[1.5rem] mb-[1rem] font-bold overflow-hidden text-4xl md: text-4xl font-bold  text-center">
             Book your Events with{" "}
             <span style={{ color: "#0765f8" }}>Teeket</span>
@@ -124,11 +124,11 @@ function Attendees() {
             );
           })}
 
-          <div className=" ml-[1rem]">
+          <div className="  mx-auto text-center">
             <button
               type="button"
               onClick={handleButtonClick}
-              className="w-[300px] bg-[#0052f6] text-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500  text-center h-[60px] mt-[1.6rem] text-xl md:flex  md:justify-center md:items-center md:ml-[15rem]"
+              className="w-[300px] bg-[#0052f6] text-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500  text-center h-[60px] mt-[1.6rem] text-xl mx -auto md:flex  md:justify-center md:items-center md:ml-[15rem]"
             >
               Discover more
             </button>
