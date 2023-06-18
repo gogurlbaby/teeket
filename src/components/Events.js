@@ -81,7 +81,7 @@ function Events() {
         {newSerch.map(function (item) {
           return (
             <div
-              className="w-[349px] lg:w-[90%] flex justify-between 
+              className="w-[349px] lg:mx-auto md:mx-auto lg:w-[500px] flex justify-between 
                 border-2 mt-[1.4rem]  border-[#4d4d4d10] px-[.6rem] py-[.6rem]
                 rounded-[.5rem]"
               key={item.id}
@@ -176,7 +176,7 @@ function Events() {
                     </div>
                   </div>
 
-                  <div className="w-[45%]  pl-[2rem]">
+                  <div className="w-[70%]  pl-[2rem] lg:pl-[6rem]">
                     <img src={item.image} alt="icon" />
                   </div>
                 </div>
