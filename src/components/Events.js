@@ -76,12 +76,14 @@ function Events() {
           </div>
         </div>
 
-        <h2 className="text-[24px] font-bold mt-[1.5rem]">Upcoming Event</h2>
+        <h2 className="text-[24px] lg:text-center font-bold mt-[1.5rem]">
+          Upcoming Events
+        </h2>
 
         {newSerch.map(function (item) {
           return (
             <div
-              className="w-[349px] lg:w-[90%] flex justify-between 
+              className="w-[349px] lg:mx-auto md:mx-auto lg:w-[500px] flex justify-between 
                 border-2 mt-[1.4rem]  border-[#4d4d4d10] px-[.6rem] py-[.6rem]
                 rounded-[.5rem]"
               key={item.id}
@@ -117,7 +119,7 @@ function Events() {
                 </div>
               </div>
 
-              <div className="w-[45%] md:w-[10%]">
+              <div className="w-[70%] pl-[2rem] lg:pl-[6rem]">
                 <img src={item.image} alt="icon" />
               </div>
             </div>
@@ -128,7 +130,7 @@ function Events() {
           <button
             type="button"
             onClick={handleButtonClick}
-            className=" w-[343px] bg-[#E1E4EB] text-center rounded-xl h-[60px] mt-[1.5rem] lg:w-[90%]"
+            className=" w-[343px] bg-[#E1E4EB] text-center rounded-xl h-[60px] mt-[1.5rem] lg:w-[450px]"
           >
             Discover more
           </button>
