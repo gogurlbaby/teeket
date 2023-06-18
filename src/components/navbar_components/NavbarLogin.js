@@ -13,7 +13,7 @@ function NavbarLogin() {
     <>
       <Navbar
         expand="md"
-        className="h-[100px] w-full flex justify-between pt-[1.5rem] px-[1rem] shadow-lg "
+        className="w-full flex justify-between pt-[1.5rem] px-[1rem] shadow-md"
       >
         <Container fluid>
           <Navbar.Brand>
@@ -45,9 +45,6 @@ function NavbarLogin() {
                 <ul>
                   <li>
                     <a href="/">Teeket</a>
-                  </li>
-                  <li>
-                    <a href="/home">Home</a>
                   </li>
                 </ul>
               </Nav>
