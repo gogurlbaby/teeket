@@ -124,11 +124,11 @@ function Attendees() {
             );
           })}
 
-          <div className=" ml-[1rem]">
+          <div>
             <button
               type="button"
               onClick={handleButtonClick}
-              className="w-[300px] bg-[#0052f6] text-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500  text-center h-[60px] mt-[1.6rem] text-xl md:flex  md:justify-center md:items-center md:ml-[15rem]"
+              className="mx-auto w-[300px] lg:w-[600px] bg-[#0052f6] text-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500 h-[60px] mt-[1.6rem] text-xl md:flex  md:justify-center md:items-center"
             >
               Discover more
             </button>

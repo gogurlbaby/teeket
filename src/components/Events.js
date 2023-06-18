@@ -76,7 +76,7 @@ function Events() {
           </div>
         </div>
 
-        <h2 className="text-[24px] font-bold mt-[1.5rem]">Upcoming Event</h2>
+        <h2 className="text-[24px] lg:text-center font-bold mt-[1.5rem]">Upcoming Events</h2>
 
         {newSerch.map(function (item) {
           return (
@@ -117,7 +117,7 @@ function Events() {
                 </div>
               </div>
 
-              <div className="w-[45%] md:w-[10%]">
+              <div className="w-[70%] pl-[2rem] lg:pl-[6rem]">
                 <img src={item.image} alt="icon" />
               </div>
             </div>
