@@ -45,7 +45,7 @@ I deeply appreciate my team members: Ayomide Oluwole, Oghenerukevwe Ayoko and La
 for putting in earnest efforts to make this app a success.
 
 # Contact
-For any inquiries or support, please contact Ayomide Oluwole.
+For any inquiries or support, please contact Philia Hammond.
 
 
 ### Deployment
