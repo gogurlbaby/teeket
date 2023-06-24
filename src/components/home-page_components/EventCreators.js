@@ -14,7 +14,7 @@ function EventCreators() {
       </div>
       <img
         src={image}
-        className="md:w-full mx-auto mt-[2rem]"
+        className="lg:w-[80%] w-full mx-auto mt-[2rem]"
         alt="user-pictures"
       />
     </div>

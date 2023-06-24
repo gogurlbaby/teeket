@@ -61,7 +61,7 @@ function TicketFeatures() {
             </h6>
             <img
               src={feature.image}
-              className="md:min-w-[60%] mx-auto mt-[1.5rem]"
+              className="lg:w-[50%] mx-auto mt-[1.5rem]"
               alt="event ticketing"
             />
           </div>

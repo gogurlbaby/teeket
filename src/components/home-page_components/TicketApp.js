@@ -11,7 +11,7 @@ function TicketApp() {
         Organize events like a Pro with our easy to use Teeket app featuring
         tools like check in, curated guestlists, marketing tools and much more
       </h6>
-      <img src={app} className="md:min-w-[60%] mx-auto mt-[1.5rem]" alt="phone_image" />
+      <img src={app} className="lg:w-[50%] mx-auto mt-[1.5rem]" alt="phone_image" />
       <h4 className="md:text-[26px] text-center font-bold text-[16px] text-[#2068F7]">
         That’s not all!
       </h4>
