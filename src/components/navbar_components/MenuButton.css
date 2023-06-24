@@ -24,11 +24,15 @@
       display: block;
     }
   }
-  
-  @media (min-width: 1024px) {
+
+  @media (max-width: 991px) {
+    /* Display the menu button on mobile */
     .menu-button {
-        /* display:contents; */
+      display: block;
     }
+  }
+  
+  @media (min-width: 992px) {
      ul {
       display: flex;
      }

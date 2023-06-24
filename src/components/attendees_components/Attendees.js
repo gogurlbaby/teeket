@@ -3,13 +3,13 @@ import "../../App.css";
 import { attendanceArray } from "../../AttendeesData";
 import { useState } from "react";
 import { remainEvents } from "../../AttendeesData";
-import sponsor_one from "../../assets/attendees_image/sponsor1.png";
-import sponsor_two from "../../assets/attendees_image/sponsor2.png";
-import sponsor_three from "../../assets/attendees_image/sponsor3.png";
-import sponsor_four from "../../assets/attendees_image/sponsor4.png";
-import sponsor_five from "../../assets/attendees_image/sponsor5.png";
-import sponsor_six from "../../assets/attendees_image/sponsor6.png";
-import signedusers from "../../assets/attendees_image/signedusers.png";
+import sponsor_one from "../../assets/attendees_image/sponsor1.svg";
+import sponsor_two from "../../assets/attendees_image/sponsor2.svg";
+import sponsor_three from "../../assets/attendees_image/sponsor3.svg";
+import sponsor_four from "../../assets/attendees_image/sponsor4.svg";
+import sponsor_five from "../../assets/attendees_image/sponsor5.svg";
+import sponsor_six from "../../assets/attendees_image/sponsor6.svg";
+import signedusers from "../../assets/attendees_image/signedusers.svg";
 
 function Attendees() {
   //Button functionality
@@ -128,7 +128,7 @@ function Attendees() {
             <button
               type="button"
               onClick={handleButtonClick}
-              className="w-[300px] bg-[#0052f6] text-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500  text-center h-[60px] mt-[1.6rem] text-xl mx -auto md:flex  md:justify-center md:items-center md:ml-[15rem]"
+              className="mx-auto w-[300px] lg:w-[600px] bg-[#0052f6] text-[#FFFFFF] rounded-[18px]font-bold rounded-full border border-grey-500 h-[60px] my-[2rem] text-xl flex  justify-center items-center"
             >
               Discover more
             </button>
@@ -200,8 +200,8 @@ function Attendees() {
           </p>
 
           <div className="flex mb-[0.5rem] justify-center -ml-[3px] md:flex mb-[0.5rem] flex flex-row justify-center items-center ml-[1.5rem]">
-            <img className="w-20 md:" src={sponsor_one} alt="testimonial" />
             <img className="w-20 md:" src={sponsor_two} alt="testimonial" />
+            <img className="w-20 md:" src={sponsor_one} alt="testimonial" />
             <img
               className=" w-15 md:"
               src={sponsor_three}
@@ -212,12 +212,12 @@ function Attendees() {
             <img className=" w-20 md: " src={sponsor_four} alt="testimonial" />
             <img
               className="w-30 mr-[5px] md:"
-              src={sponsor_five}
+              src={sponsor_six}
               alt="amvcatestimonial"
             />
             <img
               className="w-30 md:"
-              src={sponsor_six}
+              src={sponsor_five}
               alt="piggytestimonial"
             />
           </div>

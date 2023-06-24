@@ -6,9 +6,9 @@ export let attendanceArray = [
     date: "12 JUNE",
     title: `Future of Web3 Conference'`,
     price: "$8.00",
-    image: "/images/event1.png",
+    image: "/images/event1.svg",
     mapline: "/images/MapPinLine.svg",
-    icon: "/images/userorganizer1.png",
+    icon: "/images/userorganizer1.svg",
   },
 
   {
@@ -18,21 +18,21 @@ export let attendanceArray = [
     date: "21 JUNE",
     title: "Kuramo- All White Beach",
     price: "FREE",
-    image: "/images/event2.png",
+    image: "/images/event2.svg",
     mapline: "/images/MapPinLine.svg",
-    icon: "/images/userorganizer3.png",
+    icon: "/images/userorganizer3.svg",
   },
 
   {
     id: 2,
     name: "Hertechtrail",
-    location: "Lagos, Nigeria",
+    location: "PortHarcourt, Nigeria",
     date: "29 JUNE",
     title: "Women and Tech Careers",
     price: "FREE",
-    image: "/images/event3.png",
+    image: "/images/event3.svg",
     mapline: "/images/MapPinLine.svg",
-    icon: "/images/userorganizer2.png",
+    icon: "/images/userorganizer2.svg",
   },
 ];
 
