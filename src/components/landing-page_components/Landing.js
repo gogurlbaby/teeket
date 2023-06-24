@@ -15,7 +15,7 @@ function Landing() {
         }}
         className="md:flex md:flex-col md:justify-center md:items-center py-[2rem] h-screen w-full bg-blend-multiply  mx-auto"
       >
-        <div className="flex justify-center pt-20 align-center">
+        <div className="flex justify-center pt-16 align-center">
           <img src={Tee} alt="logo" />
         </div>
         <div className="flex justify-center align-center mt-[3.063rem]">
