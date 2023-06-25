@@ -32,7 +32,7 @@ function Footer() {
               "linear-gradient(217.73deg, #FF0303 -11.96%, #0052F6 68.7%)",
           }}
         >
-          <div className=" flex">
+          <div className="flex justify-center items-center">
             <div>
               <img src={image1} alt="image1" />
               <p
