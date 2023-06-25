@@ -4,7 +4,7 @@ import image2 from "../../assets/discoverpage_images/Rectangle 1704.png";
 import image3 from "../../assets/discoverpage_images/Rectangle 1703.png";
 import image4 from "../../assets/discoverpage_images/Rectangle 1706.png";
 import image5 from "../../assets/discoverpage_images/Rectangle 1708.png";
-import vector1 from "../../assets/discoverpage_images/vect.png";
+import vector1 from "../../assets/discoverpage_images/vect.svg";
 import vector2 from "../../assets/discoverpage_images/vectt.svg";
 import chatDot from "../../assets/discoverpage_images/ChatDots.svg";
 import { useNavigate } from "react-router-dom";
@@ -116,7 +116,7 @@ function Footer() {
                 <img
                   src={vector1}
                   alt="vector"
-                  className="ml-[14rem] mt-[.4rem]"
+                  className="ml-[2rem]"
                   onClick={toggleDrop}
                 />
               </div>
@@ -148,14 +148,14 @@ function Footer() {
           <div className="mt-[2rem]">
             <div className="flex">
               <img src={vector2} alt="vector" />
-              <p className="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem]">
+              <p className="text-[#FFFFFF] text-[12px] font-light  ml-[.7rem] mt-3">
                 09136605062
               </p>
             </div>
 
             <div className="flex mt-[1rem]">
               <img src={chatDot} alt="chatIcon " />
-              <p className="text-[#FFFFFF] text-[12px] font-light ml-[.7rem]">
+              <p className="text-[#FFFFFF] text-[12px] font-light ml-[.7rem] mt-3">
                 Teeket@support.com
               </p>
             </div>
