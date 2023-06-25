@@ -25,7 +25,7 @@ function Footer() {
       >
         <div
           className="w-[90%] lg:flex lg:flex-col lg:justify-center lg:items-center pl-[.5rem]
-      pt-[1.7rem] text-center mx-auto pb-[1.875rem] sm:w-[343px]
+      pt-[1.7rem] text-center mx-auto pb-[1.875rem]
       rounded-[1rem] "
           style={{
             background:
