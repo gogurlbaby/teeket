@@ -100,7 +100,7 @@ function Footer() {
           </button>
         </div>
 
-        <div className="lg:mx-[4rem] ml-[2.5rem] ">
+        <div className="lg:mx-[3.5rem] ml-[2rem] ">
           <div>
             <div className="mt-[1.8rem] lg:mt-[2.5rem]">
               <span className="text-[#989898] text-[12px] font-medium">
