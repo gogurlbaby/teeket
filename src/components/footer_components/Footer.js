@@ -84,7 +84,7 @@ function Footer() {
             Teekets For Events
           </h3>
 
-          <p className="text-center text-[14px] text-[#FFFFFF] w-[315px]">
+          <p className="flex flex-col justify-center items-center text-center text-[14px] text-[#FFFFFF] w-[315px]">
             Great news! Teeket allows you connect with other attendees at no
             cost
           </p>
