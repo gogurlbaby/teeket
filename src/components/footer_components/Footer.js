@@ -83,12 +83,12 @@ function Footer() {
           <h3 className="text-center mt-[.6rem] font-bold text-[20px] text-[#FFFFFF]">
             Teekets For Events
           </h3>
-
-          <p className="flex flex-col justify-center items-center text-center text-[14px] text-[#FFFFFF] w-[315px]">
+          <div className="md:flex md:flex-col md:justify-center md:items-center">
+          <p className="text-center text-[14px] text-[#FFFFFF] w-[315px]">
             Great news! Teeket allows you connect with other attendees at no
             cost
           </p>
-
+          </div>
           <button
             type="button"
             onClick={() => {
