@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Background from "../../assets/homepage_images/background.svg";
-import { Link } from "react-router-dom"
+
 function Hero() {
+
+   const [isloggedIn, setIsLoggedIn] = useState("Already logged in")
+
   return (
     <div
       style={{
@@ -10,7 +13,7 @@ function Hero() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat"
       }}
-      className="lg:py-[5.5rem] lg:h-[30rem] md:rounded-b-[80px] w-full rounded-b-[50px] py-[4rem] mt-4"
+      className="lg:py-[8rem] lg:h-[30rem] md:rounded-b-[80px] w-full rounded-b-[50px] py-[4rem] mt-4"
     >
       <div className="text-white pt-10">
         <div className="md:text-center text-white px-10">
@@ -20,12 +23,26 @@ function Hero() {
             event platform you need
           </h6>
         </div>
-        <Link 
-        to="/login"
-        className=" no-underline"
-        >
-        <button
-          type="submit"
+        {isloggedIn ? (
+          <button 
+          className="
+          flex 
+          justify-center 
+          items-center 
+          py-[1.125rem] 
+          px-[5.5rem] 
+          mx-auto mt-[1.5rem] 
+          font-medium 
+          text-base 
+          text-[#FFFFFF] 
+          bg-[#0052F6] 
+          rounded-xl"
+          >
+          Welcome to Teeket !
+          </button>
+        ) : (
+          <button
+          onClick={() => setIsLoggedIn(true)}
           className="
           lg:text-[18px] 
           lg:mt-[3rem] 
@@ -47,7 +64,7 @@ function Hero() {
           >
           Create an event
         </button>
-        </Link>
+        )}
       </div>
     </div>
   );
